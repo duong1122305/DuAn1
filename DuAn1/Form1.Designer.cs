@@ -265,8 +265,8 @@
         private LinkLabel llb_forgot;
         private LinkLabel llb_dki;
         private CheckBox cb_reme;
-        private TextBox tb_pass;
-        private TextBox tb_user;
+        public TextBox tb_pass;
+        public TextBox tb_user;
         private Label label3;
         private Label label2;
         private Label label1;

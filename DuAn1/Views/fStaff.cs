@@ -193,7 +193,7 @@ namespace DuAn1.Views
             f.ShowDialog();
         }
 
-        private void đăngXuấtToolStripMenuItem1_Click_1(object sender, EventArgs e)
+        public void đăngXuấtToolStripMenuItem1_Click_1(object sender, EventArgs e)
         {
 
             if (MessageBox.Show("Bạn có muốn đăng xuất?", "Thông báo!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)

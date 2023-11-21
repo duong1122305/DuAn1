@@ -106,13 +106,11 @@ namespace DuAn1
 
         }
 
-        private void btn_login_Click(object sender, EventArgs e)
+        public void btn_login_Click(object sender, EventArgs e)
         {
-
 
             if (_checkAccountType.CheckType(tb_user.Text, _validate.ReversePass(tb_pass.Text)) == 1)
             {
-
                 _role = 0;
                 fStaff _fst = new fStaff(_role, tb_user.Text);
 

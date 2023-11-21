@@ -17,6 +17,11 @@ namespace _1_DAL.Repon
             _lststaff = new List<staff>();
             _dbContext = new BookingAirlineContext();
         }
+
+        public NhanVienRepon(BookingAirlineContext bookingAirlineContext)
+        {
+        }
+
         public bool addNhanVien(staff sta)
         {
             _dbContext.staff.Add(sta);
