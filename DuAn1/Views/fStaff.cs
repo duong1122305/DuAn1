@@ -42,7 +42,7 @@ namespace DuAn1.Views
             }
         }
 
-        private void ChildForm(Form child)
+        public void ChildForm(Form child)
         {
             pn_chil.Controls.Clear();
             child.TopLevel = false;
@@ -51,7 +51,7 @@ namespace DuAn1.Views
             pn_chil.Controls.Add(child);
             child.Show();
         }
-        private void btn_qlynv_Click(object sender, EventArgs e)
+        public void btn_qlynv_Click(object sender, EventArgs e)
         {
             Fquanlynv child = new();
             ChildForm(child);
@@ -79,7 +79,7 @@ namespace DuAn1.Views
             }
         }
 
-        private void btn_dthu_Click(object sender, EventArgs e)
+        public void btn_dthu_Click(object sender, EventArgs e)
         {
             FquanLyDoanhThu child = new FquanLyDoanhThu();
             ChildForm(child);
@@ -107,7 +107,7 @@ namespace DuAn1.Views
             }
         }
 
-        private void btn_qlyve_Click(object sender, EventArgs e)
+        public void btn_qlyve_Click(object sender, EventArgs e)
         {
             FquanlyVe child = new FquanlyVe();
             ChildForm(child);
@@ -134,7 +134,7 @@ namespace DuAn1.Views
             }
         }
 
-        private void btn_qlyflight_Click(object sender, EventArgs e)
+        public void btn_qlyflight_Click(object sender, EventArgs e)
         {
             FQuanLyChuyenBay child = new();
             ChildForm(child);
@@ -160,7 +160,7 @@ namespace DuAn1.Views
             }
         }
 
-        private void btn_qlykh_Click(object sender, EventArgs e)
+        public void btn_qlykh_Click(object sender, EventArgs e)
         {
             QlykhachHang child = new QlykhachHang();
             ChildForm(child);
@@ -187,7 +187,7 @@ namespace DuAn1.Views
         }
 
 
-        private void đổiMậtKhẩuToolStripMenuItem1_Click(object sender, EventArgs e)
+        public void đổiMậtKhẩuToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             FDoimk f = new FDoimk(_messe);
             f.ShowDialog();
@@ -202,7 +202,7 @@ namespace DuAn1.Views
             }
         }
 
-        private void btn_addPlane_Click(object sender, EventArgs e)
+        public void btn_addPlane_Click(object sender, EventArgs e)
         {
             FThemMayBay child = new FThemMayBay();
             ChildForm(child);

@@ -102,7 +102,7 @@ namespace GUI.Views.View_User
             btn_discount.Visible = false;
         }
 
-        private void btn_oneWay_Click(object sender, EventArgs e)
+        public void btn_oneWay_Click(object sender, EventArgs e)
         {
             check_button = true;
             btn_discount.Visible = true;
@@ -113,7 +113,7 @@ namespace GUI.Views.View_User
             btn_TwoWay.FillColor = Color.White;
         }
 
-        private void btn_TwoWay_Click(object sender, EventArgs e)
+        public void btn_TwoWay_Click(object sender, EventArgs e)
         {
             check_button = false;
             btn_discount.Visible = true;
@@ -124,7 +124,7 @@ namespace GUI.Views.View_User
             btn_OneWay.FillColor = Color.White;
         }
 
-        private void cbb_From_SelectedIndexChanged(object sender, EventArgs e)
+        public void cbb_From_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (check_place())
             {
@@ -140,7 +140,7 @@ namespace GUI.Views.View_User
             }
         }
 
-        private void cbb_To_SelectedIndexChanged(object sender, EventArgs e)
+        public void cbb_To_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (check_place())
             {
@@ -156,7 +156,7 @@ namespace GUI.Views.View_User
             }
         }
 
-        private void date_From_ValueChanged(object sender, EventArgs e)
+        public void date_From_ValueChanged(object sender, EventArgs e)
         {
             if (check_dateFrom() == 1 || check_dateFrom() == 0)
             {
@@ -171,7 +171,7 @@ namespace GUI.Views.View_User
             }
         }
 
-        private void date_To_ValueChanged(object sender, EventArgs e)
+        public void date_To_ValueChanged(object sender, EventArgs e)
         {
             if (check_date() == 0 || check_date() == 1)
             {
@@ -186,7 +186,7 @@ namespace GUI.Views.View_User
             }
         }
 
-        private void btn_Search_Click(object sender, EventArgs e)
+        public void btn_Search_Click(object sender, EventArgs e)
         {
             if (check_button)
             {

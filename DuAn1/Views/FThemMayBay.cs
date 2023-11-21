@@ -62,7 +62,7 @@ namespace GUI.Views
             cmb_totalSeats.SelectedIndex = 0;
         }
 
-        private void dgv_dataPlane_CellClick(object sender, DataGridViewCellEventArgs e)
+        public void dgv_dataPlane_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             btn_update.Enabled = true;
             txt_PlaneCode.Text = dgv_dataPlane.CurrentRow.Cells[0].Value.ToString();
@@ -115,7 +115,7 @@ namespace GUI.Views
                 }
             }
         }
-        private void btn_add_Click(object sender, EventArgs e)
+        public void btn_add_Click(object sender, EventArgs e)
         {
             if (checkEmpty())
             {
@@ -141,7 +141,7 @@ namespace GUI.Views
             }
         }
 
-        private void btn_update_Click(object sender, EventArgs e)
+        public void btn_update_Click(object sender, EventArgs e)
         {
             if (checkEmpty())
             {

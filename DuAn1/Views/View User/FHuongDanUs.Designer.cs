@@ -90,6 +90,6 @@
 
         private Label label1;
         private Label label2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        public Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }

@@ -118,7 +118,7 @@ namespace DuAn1.Views
                 }
             }
         }
-        private void btn_fill_Click(object sender, EventArgs e)
+        public void btn_fill_Click(object sender, EventArgs e)
         {
             dgv_Revenue.ColumnCount = 6;
             dgv_Revenue.Rows.Clear();
@@ -211,7 +211,7 @@ namespace DuAn1.Views
             }
         }
 
-        private void date_To_ValueChanged(object sender, EventArgs e)
+        public void date_To_ValueChanged(object sender, EventArgs e)
         {
             if (DateTime.Compare(date_From.Value, date_To.Value) == 1)
             {
@@ -220,11 +220,11 @@ namespace DuAn1.Views
             }
         }
 
-        private void btn_Export_Click(object sender, EventArgs e)
+        public void btn_Export_Click(object sender, EventArgs e)
         {
             ExportToExcel(dgv_Revenue);
         }
-        private void ExportToExcel(DataGridView dataGridView)
+        public void ExportToExcel(DataGridView dataGridView)
         {
             Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();
             excel.Visible = false;

@@ -340,26 +340,25 @@
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2Button btn_OneWay;
-        private Guna.UI2.WinForms.Guna2Button btn_TwoWay;
         private PictureBox pictureBox1;
-        private Guna.UI2.WinForms.Guna2DateTimePicker date_To;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
         private TextBox txt_Discount;
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_ErrorTo;
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_ErrorFrom;
-        private Guna.UI2.WinForms.Guna2Button btn_Search;
-        private Guna.UI2.WinForms.Guna2DateTimePicker date_From;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
-        private Guna.UI2.WinForms.Guna2ComboBox cbb_To;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2ComboBox cbb_From;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
         private PictureBox pictureBox2;
         private Guna.UI2.WinForms.Guna2Button btn_discount;
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_dateFrom;
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_dateTo;
+        public Guna.UI2.WinForms.Guna2Button btn_OneWay;
+        public Guna.UI2.WinForms.Guna2Button btn_TwoWay;
+        public Guna.UI2.WinForms.Guna2DateTimePicker date_To;
+        public Guna.UI2.WinForms.Guna2Button btn_Search;
+        public Guna.UI2.WinForms.Guna2DateTimePicker date_From;
+        public Guna.UI2.WinForms.Guna2ComboBox cbb_To;
+        public Guna.UI2.WinForms.Guna2ComboBox cbb_From;
     }
 }

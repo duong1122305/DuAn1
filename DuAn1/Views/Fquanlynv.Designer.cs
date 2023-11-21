@@ -345,24 +345,24 @@
         private GroupBox groupBox4;
         private DataGridView dgrid_NhanVien;
         private Label label3;
-        private TextBox txt_Email;
-        private TextBox txt_Sdt;
         private Label label2;
-        private TextBox txt_Ten;
         private Label label1;
         private Label label6;
-        private TextBox txt_timkiem;
         private Label label5;
         private PictureBox pictureBox1;
-        private RadioButton rbtn_off;
-        private RadioButton rbtn_onl;
         private Label lb_ErrorEmail;
         private Label lb_ErrorPhone;
         private Label lb_ErrorName;
-        private TextBox txt_Pass;
         private Label label4;
-        private Guna.UI2.WinForms.Guna2Button btn_Search;
-        private Guna.UI2.WinForms.Guna2Button btn_Them;
-        private Guna.UI2.WinForms.Guna2Button btn_Sua;
+        public TextBox txt_Email;
+        public TextBox txt_Sdt;
+        public TextBox txt_Ten;
+        public TextBox txt_timkiem;
+        public RadioButton rbtn_off;
+        public RadioButton rbtn_onl;
+        public TextBox txt_Pass;
+        public Guna.UI2.WinForms.Guna2Button btn_Search;
+        public Guna.UI2.WinForms.Guna2Button btn_Them;
+        public Guna.UI2.WinForms.Guna2Button btn_Sua;
     }
 }

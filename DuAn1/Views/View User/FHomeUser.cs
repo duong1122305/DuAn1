@@ -48,7 +48,7 @@ namespace GUI.Views
 
         }
 
-        private void ChildForm(Form child)
+        public void ChildForm(Form child)
         {
             guna2Panel1.Controls.Clear();
             child.TopLevel = false;
@@ -58,7 +58,7 @@ namespace GUI.Views
             child.Show();
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e) //button mua ve truc tuyen
+        public void guna2Button1_Click(object sender, EventArgs e) //button mua ve truc tuyen
         {
 
             FbuyTickket child = new FbuyTickket(_message);
@@ -78,7 +78,7 @@ namespace GUI.Views
             }
         }
 
-        private void guna2Button3_Click(object sender, EventArgs e)//button tinh trang chuyen bay
+        public void guna2Button3_Click(object sender, EventArgs e)//button tinh trang chuyen bay
         {
             FtinhTrangChuyenBay child = new();
             ChildForm(child);
@@ -98,7 +98,7 @@ namespace GUI.Views
             }
         }
 
-        private void guna2Button4_Click(object sender, EventArgs e)//button lich bay
+        public void guna2Button4_Click(object sender, EventArgs e)//button lich bay
         {
             FlichBay child = new FlichBay(_message);
             ChildForm(child);
@@ -118,7 +118,7 @@ namespace GUI.Views
             }
         }
 
-        private void guna2Button2_Click(object sender, EventArgs e)
+        public void guna2Button2_Click(object sender, EventArgs e)
         {
             FQuanLyVeDat child = new FQuanLyVeDat(_message);
             ChildForm(child);
@@ -139,31 +139,31 @@ namespace GUI.Views
         }
 
 
-        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        public void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
+        public void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FDoimk _fDoimk = new FDoimk(_message);
             _fDoimk.ShowDialog();
         }
 
-        private void thôngTinTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
+        public void thôngTinTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FthongTinNguoiDung fthongTinNguoiDung = new FthongTinNguoiDung(label1.Text);
             fthongTinNguoiDung.ShowDialog();
         }
 
-        private void hướngDẫnSửDụngToolStripMenuItem_Click(object sender, EventArgs e)
+        public void hướngDẫnSửDụngToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FHuongDanUs fhuongdan = new FHuongDanUs();
             fhuongdan.ShowDialog();
 
         }
 
-        private void thêmTàiKhoảnNgânHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        public void thêmTàiKhoảnNgânHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FtaikhoanNh ftaikhoanNh = new FtaikhoanNh(_message);
             ftaikhoanNh.ShowDialog();

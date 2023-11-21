@@ -387,19 +387,13 @@
         private PictureBox pictureBox2;
         private Label label2;
         private PictureBox pictureBox8;
-        private TextBox tbx_pass2;
         private Label label8;
         private PictureBox pictureBox7;
-        private TextBox txb_pass1;
         private Label label7;
-        private TextBox tbx_ma;
         private PictureBox pictureBox4;
-        private TextBox tbx_email;
         private Label label4;
         private PictureBox pictureBox1;
-        private Button btn_success;
         private Label label1;
-        private Button btn_sendCode;
         private Panel time;
         private Label label3;
         private Label lb_Seconds;
@@ -409,5 +403,11 @@
         private Label lb_errorCode;
         private Label lb_errorPass;
         private Label lb_ErrorPassNew;
+        public TextBox tbx_pass2;
+        public TextBox txb_pass1;
+        public TextBox tbx_ma;
+        public TextBox tbx_email;
+        public Button btn_success;
+        public Button btn_sendCode;
     }
 }

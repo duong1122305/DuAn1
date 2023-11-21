@@ -65,7 +65,7 @@ namespace GUI.Views.View_User
             return true;
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e) // dđây là button hành trình
+        public void guna2Button1_Click(object sender, EventArgs e) // dđây là button hành trình
         {
             check_button = "Hành trình";
             guna2Button2.FillColor = Color.White;
@@ -77,7 +77,7 @@ namespace GUI.Views.View_User
             HienThiHanhTrinh();
         }
 
-        private void guna2Button2_Click(object sender, EventArgs e)//đây là button số hiệu chuyến bay
+        public void guna2Button2_Click(object sender, EventArgs e)//đây là button số hiệu chuyến bay
         {
             check_button = "Số hiệu";
             guna2Button1.FillColor = Color.White;
@@ -91,7 +91,7 @@ namespace GUI.Views.View_User
             HienThiSoHieuChuyenBay();
         }
 
-        private void HienThiSoHieuChuyenBay() // HIỂN THỊ các nút trong số hiệu chuuyến bay
+        public void HienThiSoHieuChuyenBay() // HIỂN THỊ các nút trong số hiệu chuuyến bay
         {
             guna2HtmlLabel3.Visible = false;
             guna2HtmlLabel9.Visible = true;
@@ -99,7 +99,7 @@ namespace GUI.Views.View_User
             cbb_To.Visible = false;
         }
 
-        private void HienThiHanhTrinh() //Hiển thị các nút trong hành trình
+        public void HienThiHanhTrinh() //Hiển thị các nút trong hành trình
         {
             guna2HtmlLabel3.Visible = true;
             guna2HtmlLabel9.Visible = false;
@@ -108,7 +108,7 @@ namespace GUI.Views.View_User
             cbb_To.Visible = true;
         }
 
-        private void cbb_From_SelectedIndexChanged(object sender, EventArgs e)
+        public void cbb_From_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (check())
             {
@@ -124,7 +124,7 @@ namespace GUI.Views.View_User
             }
         }
 
-        private void cbb_To_SelectedIndexChanged(object sender, EventArgs e)
+        public void cbb_To_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (check())
             {
@@ -157,7 +157,7 @@ namespace GUI.Views.View_User
                 return -1;
             }
         }
-        private void date_Start_ValueChanged(object sender, EventArgs e)
+        public void date_Start_ValueChanged(object sender, EventArgs e)
         {
 
             if (check_dateFrom() == -1)
@@ -173,7 +173,7 @@ namespace GUI.Views.View_User
             }
         }
 
-        private void btn_Search_Click(object sender, EventArgs e)
+        public void btn_Search_Click(object sender, EventArgs e)
         {
             if (check_button == "Hành trình")
             {

@@ -47,7 +47,7 @@ namespace DuAn1.Views
             lb_ErrorPassNew.Visible = false;
             time.Visible = false;
         }
-        private async void btn_sendCode_Click(object sender, EventArgs e)
+        public async void btn_sendCode_Click(object sender, EventArgs e)
         {
             try
             {
@@ -87,7 +87,7 @@ namespace DuAn1.Views
         }
 
 
-        private void countDown_Tick(object sender, EventArgs e)
+        public void countDown_Tick(object sender, EventArgs e)
         {
             btn_sendCode.Enabled = false;
             if (minutes > -2)
@@ -121,7 +121,7 @@ namespace DuAn1.Views
             }
         }
 
-        private void btn_success_Click(object sender, EventArgs e)
+        public void btn_success_Click(object sender, EventArgs e)
         {
             if (tbx_email.Text != "" && tbx_ma.Text != "" && tbx_pass2.Text != "" && txb_pass1.Text != "" && tbx_pass2.Text != "")
             {
@@ -157,7 +157,7 @@ namespace DuAn1.Views
             }
         }
 
-        private void tbx_email_TextChanged(object sender, EventArgs e)
+        public void tbx_email_TextChanged(object sender, EventArgs e)
         {
             if (_validate.checkEmail(tbx_email.Text))
             {
@@ -175,7 +175,7 @@ namespace DuAn1.Views
             }
         }
 
-        private void tbx_ma_TextChanged(object sender, EventArgs e)
+        public void tbx_ma_TextChanged(object sender, EventArgs e)
         {
             if (tbx_ma.Text == code_otp)
             {
@@ -194,7 +194,7 @@ namespace DuAn1.Views
 
         }
 
-        private void tbx_pass2_TextChanged(object sender, EventArgs e)
+        public void tbx_pass2_TextChanged(object sender, EventArgs e)
         {
             if (tbx_pass2.Text == txb_pass1.Text)
             {
@@ -213,7 +213,7 @@ namespace DuAn1.Views
 
         }
 
-        private void txb_pass1_TextChanged(object sender, EventArgs e)
+        public void txb_pass1_TextChanged(object sender, EventArgs e)
         {
             if (_validate.checkpass(txb_pass1.Text))
             {
@@ -230,7 +230,7 @@ namespace DuAn1.Views
             }
         }
 
-        private void FforGotPass_FormClosing(object sender, FormClosingEventArgs e)
+        public void FforGotPass_FormClosing(object sender, FormClosingEventArgs e)
         {
             reset();
         }

@@ -152,11 +152,11 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private TextBox txt_Name;
-        private TextBox txt_BankNumber;
-        private Guna.UI2.WinForms.Guna2Button btn_Add;
-        private ComboBox cbb_BankName;
         private Label label4;
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_ErrorName;
+        public TextBox txt_Name;
+        public TextBox txt_BankNumber;
+        public Guna.UI2.WinForms.Guna2Button btn_Add;
+        public ComboBox cbb_BankName;
     }
 }

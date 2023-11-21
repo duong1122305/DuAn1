@@ -168,13 +168,13 @@
         #endregion
 
         private DataGridView dgv_dataPlane;
-        private Guna.UI2.WinForms.Guna2Button btn_add;
-        private Guna.UI2.WinForms.Guna2Button btn_update;
         private Label label1;
-        private TextBox txt_PlaneCode;
         private Label label2;
         private Label label3;
-        private TextBox txt_NamePlane;
-        private Guna.UI2.WinForms.Guna2ComboBox cmb_totalSeats;
+        public Guna.UI2.WinForms.Guna2Button btn_add;
+        public Guna.UI2.WinForms.Guna2Button btn_update;
+        public TextBox txt_PlaneCode;
+        public TextBox txt_NamePlane;
+        public Guna.UI2.WinForms.Guna2ComboBox cmb_totalSeats;
     }
 }

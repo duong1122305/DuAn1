@@ -55,7 +55,7 @@ namespace GUI.Views.View_User
             }
             return true;
         }
-        private void btn_Add_Click(object sender, EventArgs e)
+        public void btn_Add_Click(object sender, EventArgs e)
         {
             if (_checkName)
             {
@@ -89,7 +89,7 @@ namespace GUI.Views.View_User
             }
         }
 
-        private void txt_BankNumber_TextChanged(object sender, EventArgs e)
+        public void txt_BankNumber_TextChanged(object sender, EventArgs e)
         {
             if (txt_BankNumber.Text != "")
             {
@@ -119,7 +119,7 @@ namespace GUI.Views.View_User
 
         }
 
-        private void txt_Name_TextChanged(object sender, EventArgs e)
+        public void txt_Name_TextChanged(object sender, EventArgs e)
         {
             if (_validate.checkName(txt_Name.Text))
             {

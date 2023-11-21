@@ -301,19 +301,19 @@
         private Label label3;
         private Label label2;
         private Label label1;
-        private TextBox tb_find;
         private Label label8;
         private Label label7;
-        private TextBox tb_phone;
         private Label label5;
-        private RichTextBox rtb_addr;
-        private DateTimePicker dtp_dob;
-        private TextBox tb_name;
         private Label label4;
-        private TextBox tb_gender;
-        private TextBox textBox3;
         private Label label6;
-        private Guna.UI2.WinForms.Guna2Button btn_find;
-        private TextBox tb_status;
+        public TextBox tb_find;
+        public TextBox tb_phone;
+        public RichTextBox rtb_addr;
+        public DateTimePicker dtp_dob;
+        public TextBox tb_name;
+        public TextBox tb_gender;
+        public TextBox textBox3;
+        public Guna.UI2.WinForms.Guna2Button btn_find;
+        public TextBox tb_status;
     }
 }

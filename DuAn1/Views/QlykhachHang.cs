@@ -23,7 +23,7 @@ namespace DuAn1.Views
             InitializeComponent();
         }
 
-        private void QlykhachHang_Load(object sender, EventArgs e)
+        public void QlykhachHang_Load(object sender, EventArgs e)
         {
             dtgv_kh.Rows.Clear();
             dtgv_kh.ColumnCount = 8;
@@ -44,7 +44,7 @@ namespace DuAn1.Views
             }
         }
 
-        private void dtgv_kh_CellClick(object sender, DataGridViewCellEventArgs e)
+        public void dtgv_kh_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             id = int.Parse(dtgv_kh.CurrentRow.Cells[0].Value.ToString());
             tb_name.Text = dtgv_kh.CurrentRow.Cells[1].Value.ToString();
@@ -55,7 +55,7 @@ namespace DuAn1.Views
             tb_status.Text = dtgv_kh.CurrentRow.Cells[7].Value.ToString();
         }
 
-        private void btn_find_Click(object sender, EventArgs e)
+        public void btn_find_Click(object sender, EventArgs e)
         {
             if (tb_find.Text == "")
             {
@@ -82,7 +82,7 @@ namespace DuAn1.Views
             }
         }
 
-        private void tb_find_TextChanged(object sender, EventArgs e)
+        public void tb_find_TextChanged(object sender, EventArgs e)
         {
             if (tb_find.Text == "")
             {
@@ -90,7 +90,7 @@ namespace DuAn1.Views
             }
         }
 
-        private void btn_sua_Click(object sender, EventArgs e)
+        public void btn_sua_Click(object sender, EventArgs e)
         {
             if (sta == 1)
             {
@@ -112,7 +112,7 @@ namespace DuAn1.Views
                 QlykhachHang_Load(null, null);
             }
         }
-        private void Clear()
+        public void Clear()
         {
             tb_name.Clear();
             tb_status.Clear();

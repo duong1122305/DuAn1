@@ -56,7 +56,7 @@ namespace GUI.Views.View_User
                 return false;
             }
         }
-        private void guna2Button1_Click(object sender, EventArgs e)
+        public void guna2Button1_Click(object sender, EventArgs e)
         {
             if (tbx_passOld.Text != "" && tbx_passNew.Text != "" && tbx_passReNew.Text != "")
             {
@@ -89,7 +89,7 @@ namespace GUI.Views.View_User
             }
         }
 
-        private void tbx_passReNew_TextChanged(object sender, EventArgs e)
+        public void tbx_passReNew_TextChanged(object sender, EventArgs e)
         {
             if (tbx_passReNew.Text == tbx_passNew.Text)
             {
@@ -107,12 +107,12 @@ namespace GUI.Views.View_User
             }
         }
 
-        private void guna2Button2_Click(object sender, EventArgs e)
+        public void guna2Button2_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void tbx_passNew_TextChanged(object sender, EventArgs e)
+        public void tbx_passNew_TextChanged(object sender, EventArgs e)
         {
             if (_validate.checkpass(tbx_passNew.Text))
             {

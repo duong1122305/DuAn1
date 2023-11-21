@@ -97,7 +97,7 @@ namespace GUI.Views.View_User
             }
         }
 
-        private void Tg_Click(object? sender, EventArgs e)
+        public void Tg_Click(object? sender, EventArgs e)
         {
             Guna2Button btn_current = (Guna2Button)sender;
             var flight = _flightServices.get_list().Where(c => c.FlightCode == btn_current.Name).FirstOrDefault();
@@ -166,7 +166,7 @@ namespace GUI.Views.View_User
             }
         }
 
-        private void Pt_Click(object? sender, EventArgs e)
+        public void Pt_Click(object? sender, EventArgs e)
         {
             Guna2Button btn_current = (Guna2Button)sender;
             var flight = _flightServices.get_list().Where(c => c.FlightCode == btn_current.Name).FirstOrDefault();

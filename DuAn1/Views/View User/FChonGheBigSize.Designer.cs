@@ -305,7 +305,6 @@
         private Label label4;
         private Label label5;
         private Panel panel1;
-        private Guna.UI2.WinForms.Guna2Button btn_pay;
         private Label label6;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Label label16;
@@ -318,6 +317,7 @@
         private Label lb_amount;
         private Label lb_price;
         private Label label11;
-        private CheckBox cb_checkacp;
+        public Guna.UI2.WinForms.Guna2Button btn_pay;
+        public CheckBox cb_checkacp;
     }
 }

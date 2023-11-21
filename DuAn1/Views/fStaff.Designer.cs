@@ -239,8 +239,6 @@
 
         private PictureBox pictureBox1;
         private Panel panel1;
-        private Button btn_dthu;
-        private Button btn_qlynv;
         private Panel pn_chil;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem hệThốngToolStripMenuItem;
@@ -250,9 +248,11 @@
         private ToolStripMenuItem hệThốngToolStripMenuItem1;
         private ToolStripMenuItem đổiMậtKhẩuToolStripMenuItem1;
         private ToolStripMenuItem đăngXuấtToolStripMenuItem1;
-        private Button btn_qlykh;
-        private Button btn_qlyflight;
-        private Button btn_qlyve;
-        private Button btn_addPlane;
+        public Button btn_dthu;
+        public Button btn_qlynv;
+        public Button btn_qlykh;
+        public Button btn_qlyflight;
+        public Button btn_qlyve;
+        public Button btn_addPlane;
     }
 }

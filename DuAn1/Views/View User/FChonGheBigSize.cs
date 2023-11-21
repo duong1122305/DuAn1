@@ -213,7 +213,7 @@ namespace GUI.Views.View_User
         }
         List<string> _listcode = new List<string>();
         int total = 0;
-        private void Chair_CheckedChanged(object? sender, EventArgs e)
+        public void Chair_CheckedChanged(object? sender, EventArgs e)
         {
             Guna2ImageCheckBox a = (Guna2ImageCheckBox)(sender);
             if (a.Tag == "PT")
@@ -245,7 +245,7 @@ namespace GUI.Views.View_User
         }
 
 
-        private void cb_checkacp_CheckedChanged(object sender, EventArgs e)
+        public void cb_checkacp_CheckedChanged(object sender, EventArgs e)
         {
             if (cb_checkacp.Checked)
             {
@@ -257,7 +257,7 @@ namespace GUI.Views.View_User
             }
         }
 
-        private void btn_pay_Click(object sender, EventArgs e)
+        public void btn_pay_Click(object sender, EventArgs e)
         {
             if (amount > 0)
             {

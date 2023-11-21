@@ -144,21 +144,21 @@
             // thôngTinTàiKhoảnToolStripMenuItem
             // 
             thôngTinTàiKhoảnToolStripMenuItem.Name = "thôngTinTàiKhoảnToolStripMenuItem";
-            thôngTinTàiKhoảnToolStripMenuItem.Size = new Size(177, 22);
+            thôngTinTàiKhoảnToolStripMenuItem.Size = new Size(180, 22);
             thôngTinTàiKhoảnToolStripMenuItem.Text = "Thông tin tài khoản";
             thôngTinTàiKhoảnToolStripMenuItem.Click += thôngTinTàiKhoảnToolStripMenuItem_Click;
             // 
             // đổiMậtKhẩuToolStripMenuItem
             // 
             đổiMậtKhẩuToolStripMenuItem.Name = "đổiMậtKhẩuToolStripMenuItem";
-            đổiMậtKhẩuToolStripMenuItem.Size = new Size(177, 22);
+            đổiMậtKhẩuToolStripMenuItem.Size = new Size(180, 22);
             đổiMậtKhẩuToolStripMenuItem.Text = "Đổi mật khẩu";
             đổiMậtKhẩuToolStripMenuItem.Click += đổiMậtKhẩuToolStripMenuItem_Click;
             // 
             // đăngXuấtToolStripMenuItem
             // 
             đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            đăngXuấtToolStripMenuItem.Size = new Size(177, 22);
+            đăngXuấtToolStripMenuItem.Size = new Size(180, 22);
             đăngXuấtToolStripMenuItem.Text = "Thoát";
             đăngXuấtToolStripMenuItem.Click += đăngXuấtToolStripMenuItem_Click;
             // 
@@ -218,20 +218,19 @@
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private MenuStrip menuStrip1;
-        private ToolStripMenuItem hệThốngToolStripMenuItem;
-        private ToolStripMenuItem thôngTinTàiKhoảnToolStripMenuItem;
-        private ToolStripMenuItem đổiMậtKhẩuToolStripMenuItem;
-        private ToolStripMenuItem đăngXuấtToolStripMenuItem;
-        private ToolStripMenuItem trợGiúpToolStripMenuItem;
-        private ToolStripMenuItem hướngDẫnSửDụngToolStripMenuItem;
         private Label label1;
-        private ToolStripMenuItem thêmTàiKhoảnNgânHàngToolStripMenuItem;
+        public Guna.UI2.WinForms.Guna2Button guna2Button1;
+        public Guna.UI2.WinForms.Guna2Button guna2Button2;
+        public Guna.UI2.WinForms.Guna2Button guna2Button3;
+        public Guna.UI2.WinForms.Guna2Button guna2Button4;
+        public Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        public ToolStripMenuItem hệThốngToolStripMenuItem;
+        public ToolStripMenuItem thôngTinTàiKhoảnToolStripMenuItem;
+        public ToolStripMenuItem đổiMậtKhẩuToolStripMenuItem;
+        public ToolStripMenuItem đăngXuấtToolStripMenuItem;
+        public ToolStripMenuItem trợGiúpToolStripMenuItem;
+        public ToolStripMenuItem hướngDẫnSửDụngToolStripMenuItem;
+        public ToolStripMenuItem thêmTàiKhoảnNgânHàngToolStripMenuItem;
     }
 }

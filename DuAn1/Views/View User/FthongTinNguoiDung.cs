@@ -68,7 +68,7 @@ namespace GUI.Views.View_User
             tbx_sdt.Text = item.Phone;
         }
 
-        private void btn_sua_Click(object sender, EventArgs e)
+        public void btn_sua_Click(object sender, EventArgs e)
         {
             tbx_email.Enabled = false;
             tbx_diaChi.Enabled = true;
@@ -80,7 +80,7 @@ namespace GUI.Views.View_User
             btn_sua.Enabled = false;
         }
 
-        private void btn_update_Click(object sender, EventArgs e)
+        public void btn_update_Click(object sender, EventArgs e)
         {
             if (tbx_email.Text != "" || tbx_diaChi.Text != "" || tbx_hoTen.Text != "" || cbx_gt.Text != "" || date_bird.Text != "" || tbx_sdt.Text != "")
             {
@@ -118,7 +118,7 @@ namespace GUI.Views.View_User
             }
         }
 
-        private void Unelable()
+        public void Unelable()
         {
             tbx_email.Enabled = false;
             tbx_diaChi.Enabled = false;
@@ -132,7 +132,7 @@ namespace GUI.Views.View_User
             btn_update.Enabled = false;
         }
 
-        private void tbx_hoTen_TextChanged(object sender, EventArgs e)
+        public void tbx_hoTen_TextChanged(object sender, EventArgs e)
         {
             if (_validate.checkName(tbx_hoTen.Text))
             {
@@ -150,7 +150,7 @@ namespace GUI.Views.View_User
             }
         }
 
-        private void tbx_sdt_TextChanged(object sender, EventArgs e)
+        public void tbx_sdt_TextChanged(object sender, EventArgs e)
         {
             if (_validate.checkPhoneNumber(tbx_sdt.Text))
             {
@@ -168,7 +168,7 @@ namespace GUI.Views.View_User
             }
         }
 
-        private void tbx_email_TextChanged(object sender, EventArgs e)
+        public void tbx_email_TextChanged(object sender, EventArgs e)
         {
             if (_validate.checkEmail(tbx_email.Text))
             {
@@ -186,7 +186,7 @@ namespace GUI.Views.View_User
             }
         }
 
-        private void date_bird_ValueChanged(object sender, EventArgs e)
+        public void date_bird_ValueChanged(object sender, EventArgs e)
         {
             DateTime now = DateTime.Now;
             TimeSpan time = now - date_bird.Value;

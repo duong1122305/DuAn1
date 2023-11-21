@@ -71,7 +71,6 @@
             dgv_InforCus.Size = new Size(825, 282);
             dgv_InforCus.TabIndex = 3;
             dgv_InforCus.CellClick += dgv_InforCus_CellClick;
-
             // 
             // txt_Name
             // 
@@ -96,7 +95,6 @@
             txt_Address.Name = "txt_Address";
             txt_Address.Size = new Size(160, 55);
             txt_Address.TabIndex = 7;
-
             // 
             // label4
             // 
@@ -148,7 +146,6 @@
             txt_FlightCode.Name = "txt_FlightCode";
             txt_FlightCode.Size = new Size(160, 34);
             txt_FlightCode.TabIndex = 11;
-    
             // 
             // label6
             // 
@@ -158,7 +155,6 @@
             label6.Size = new Size(88, 15);
             label6.TabIndex = 10;
             label6.Text = "Mã chuyến bay";
-
             // 
             // FkhqlChuyenBay
             // 
@@ -189,16 +185,16 @@
 
         private Label label1;
         private Label label2;
-        private DataGridView dgv_InforCus;
-        private TextBox txt_Name;
-        private TextBox txt_Gender;
-        private TextBox txt_Address;
         private Label label4;
         private Label label3;
-        private TextBox txt_PhoneNumber;
-        private TextBox txt_SeatCode;
         private Label label5;
-        private TextBox txt_FlightCode;
         private Label label6;
+        public DataGridView dgv_InforCus;
+        public TextBox txt_Name;
+        public TextBox txt_Gender;
+        public TextBox txt_Address;
+        public TextBox txt_PhoneNumber;
+        public TextBox txt_SeatCode;
+        public TextBox txt_FlightCode;
     }
 }

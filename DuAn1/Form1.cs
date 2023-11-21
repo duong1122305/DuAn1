@@ -151,14 +151,14 @@ namespace DuAn1
             load();
         }
 
-        private void llb_dki_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        public void llb_dki_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
             _fdky.ShowDialog();
             this.Show();
         }
 
-        private void llb_forgot_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        public void llb_forgot_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
             _fForgot.ShowDialog();
@@ -210,7 +210,7 @@ namespace DuAn1
             btn_login.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
         }
 
-        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        public void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (MessageBox.Show("Bạn có chắc là muốn thoát không?", "Thông báo!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
             {
@@ -218,7 +218,7 @@ namespace DuAn1
             }
         }
 
-        private void cb_reme_CheckedChanged(object sender, EventArgs e)
+        public void cb_reme_CheckedChanged(object sender, EventArgs e)
         {
             Settings.Default.isRemember = cb_reme.Checked;
             if (cb_reme.Checked)

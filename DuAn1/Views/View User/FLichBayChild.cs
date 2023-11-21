@@ -133,7 +133,7 @@ namespace GUI.Views.View_User
             pic.SizeMode = PictureBoxSizeMode.Zoom;
         }
 
-        private void Pic_Click(object? sender, EventArgs e)
+        public void Pic_Click(object? sender, EventArgs e)
         {
             PictureBox pic = (PictureBox)(sender);
             var flight = _flightServices.get_list().Where(c => c.FlightCode == pic.Name).FirstOrDefault();

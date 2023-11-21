@@ -67,7 +67,7 @@ namespace GUI.Views.View_User
             }
         }
 
-        private void btn_Search_Click(object sender, EventArgs e)
+        public void btn_Search_Click(object sender, EventArgs e)
         {
             if (check())
             {
@@ -106,7 +106,7 @@ namespace GUI.Views.View_User
             }
         }
 
-        private void cbb_From_SelectedIndexChanged(object sender, EventArgs e)
+        public void cbb_From_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (check())
             {
@@ -123,7 +123,7 @@ namespace GUI.Views.View_User
             }
         }
 
-        private void cbb_To_SelectedIndexChanged(object sender, EventArgs e)
+        public void cbb_To_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (check())
             {
@@ -139,7 +139,7 @@ namespace GUI.Views.View_User
             }
         }
 
-        private void date_nkh_ValueChanged(object sender, EventArgs e)
+        public void date_nkh_ValueChanged(object sender, EventArgs e)
         {
             if (check_dateFrom() == -1)
             {

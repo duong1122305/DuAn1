@@ -122,9 +122,9 @@
         #endregion
 
         private PictureBox pictureBox1;
-        private CheckBox checkBox1;
-        private Guna.UI2.WinForms.Guna2Button btn_acp;
-        private Guna.UI2.WinForms.Guna2Button btn_cancel;
         private Label label1;
+        public CheckBox checkBox1;
+        public Guna.UI2.WinForms.Guna2Button btn_acp;
+        public Guna.UI2.WinForms.Guna2Button btn_cancel;
     }
 }

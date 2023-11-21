@@ -115,7 +115,7 @@ namespace GUI.Views.View_User
                 flowLayoutPanel1.Controls.Add(pan);
             }
         }
-        private void Btn_Cancel_Click(object? sender, EventArgs e)
+        public void Btn_Cancel_Click(object? sender, EventArgs e)
         {
             Guna2Button btn = (Guna2Button)(sender);
             var ticket = _ticketServices.list_Ticket().Where(c => c.Id == Convert.ToInt32(btn.Name)).FirstOrDefault();

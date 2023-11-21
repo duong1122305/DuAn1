@@ -28,205 +28,204 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.cbb_From = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.cbb_To = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.date_nkh = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.btn_Search = new Guna.UI2.WinForms.Guna2Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lb_ErrorTo = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lb_ErrorFrom = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lb_ErrorDate = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            cbb_From = new Guna.UI2.WinForms.Guna2ComboBox();
+            cbb_To = new Guna.UI2.WinForms.Guna2ComboBox();
+            guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            date_nkh = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            btn_Search = new Guna.UI2.WinForms.Guna2Button();
+            pictureBox1 = new PictureBox();
+            guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            lb_ErrorTo = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            lb_ErrorFrom = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            lb_ErrorDate = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // guna2HtmlLabel1
             // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(28, 24);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(251, 21);
-            this.guna2HtmlLabel1.TabIndex = 0;
-            this.guna2HtmlLabel1.Text = "NHẬP THÔNG TIN CHUYẾN BAY";
+            guna2HtmlLabel1.BackColor = Color.Transparent;
+            guna2HtmlLabel1.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel1.Location = new Point(28, 24);
+            guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            guna2HtmlLabel1.Size = new Size(251, 21);
+            guna2HtmlLabel1.TabIndex = 0;
+            guna2HtmlLabel1.Text = "NHẬP THÔNG TIN CHUYẾN BAY";
             // 
             // guna2HtmlLabel2
             // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(49, 125);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(33, 20);
-            this.guna2HtmlLabel2.TabIndex = 1;
-            this.guna2HtmlLabel2.Text = "Từ *";
+            guna2HtmlLabel2.BackColor = Color.Transparent;
+            guna2HtmlLabel2.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2HtmlLabel2.Location = new Point(49, 125);
+            guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            guna2HtmlLabel2.Size = new Size(33, 20);
+            guna2HtmlLabel2.TabIndex = 1;
+            guna2HtmlLabel2.Text = "Từ *";
             // 
             // guna2HtmlLabel3
             // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(360, 125);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(42, 20);
-            this.guna2HtmlLabel3.TabIndex = 2;
-            this.guna2HtmlLabel3.Text = "Đến *";
+            guna2HtmlLabel3.BackColor = Color.Transparent;
+            guna2HtmlLabel3.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2HtmlLabel3.Location = new Point(360, 125);
+            guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            guna2HtmlLabel3.Size = new Size(42, 20);
+            guna2HtmlLabel3.TabIndex = 2;
+            guna2HtmlLabel3.Text = "Đến *";
             // 
             // cbb_From
             // 
-            this.cbb_From.BackColor = System.Drawing.Color.Transparent;
-            this.cbb_From.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbb_From.DropDownHeight = 150;
-            this.cbb_From.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbb_From.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbb_From.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbb_From.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cbb_From.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbb_From.IntegralHeight = false;
-            this.cbb_From.ItemHeight = 30;
-            this.cbb_From.Location = new System.Drawing.Point(49, 148);
-            this.cbb_From.Name = "cbb_From";
-            this.cbb_From.Size = new System.Drawing.Size(238, 36);
-            this.cbb_From.TabIndex = 3;
-            this.cbb_From.SelectedIndexChanged += new System.EventHandler(this.cbb_From_SelectedIndexChanged);
+            cbb_From.BackColor = Color.Transparent;
+            cbb_From.DrawMode = DrawMode.OwnerDrawFixed;
+            cbb_From.DropDownHeight = 150;
+            cbb_From.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbb_From.FocusedColor = Color.FromArgb(94, 148, 255);
+            cbb_From.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            cbb_From.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            cbb_From.ForeColor = Color.FromArgb(68, 88, 112);
+            cbb_From.IntegralHeight = false;
+            cbb_From.ItemHeight = 30;
+            cbb_From.Location = new Point(49, 148);
+            cbb_From.Name = "cbb_From";
+            cbb_From.Size = new Size(238, 36);
+            cbb_From.TabIndex = 3;
+            cbb_From.SelectedIndexChanged += cbb_From_SelectedIndexChanged;
             // 
             // cbb_To
             // 
-            this.cbb_To.BackColor = System.Drawing.Color.Transparent;
-            this.cbb_To.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbb_To.DropDownHeight = 150;
-            this.cbb_To.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbb_To.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbb_To.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbb_To.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cbb_To.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbb_To.IntegralHeight = false;
-            this.cbb_To.ItemHeight = 30;
-            this.cbb_To.Location = new System.Drawing.Point(360, 148);
-            this.cbb_To.Name = "cbb_To";
-            this.cbb_To.Size = new System.Drawing.Size(238, 36);
-            this.cbb_To.TabIndex = 4;
-            this.cbb_To.SelectedIndexChanged += new System.EventHandler(this.cbb_To_SelectedIndexChanged);
+            cbb_To.BackColor = Color.Transparent;
+            cbb_To.DrawMode = DrawMode.OwnerDrawFixed;
+            cbb_To.DropDownHeight = 150;
+            cbb_To.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbb_To.FocusedColor = Color.FromArgb(94, 148, 255);
+            cbb_To.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            cbb_To.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            cbb_To.ForeColor = Color.FromArgb(68, 88, 112);
+            cbb_To.IntegralHeight = false;
+            cbb_To.ItemHeight = 30;
+            cbb_To.Location = new Point(360, 148);
+            cbb_To.Name = "cbb_To";
+            cbb_To.Size = new Size(238, 36);
+            cbb_To.TabIndex = 4;
+            cbb_To.SelectedIndexChanged += cbb_To_SelectedIndexChanged;
             // 
             // guna2HtmlLabel4
             // 
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(49, 226);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(121, 20);
-            this.guna2HtmlLabel4.TabIndex = 5;
-            this.guna2HtmlLabel4.Text = "Ngày khởi hành *";
+            guna2HtmlLabel4.BackColor = Color.Transparent;
+            guna2HtmlLabel4.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2HtmlLabel4.Location = new Point(49, 226);
+            guna2HtmlLabel4.Name = "guna2HtmlLabel4";
+            guna2HtmlLabel4.Size = new Size(121, 20);
+            guna2HtmlLabel4.TabIndex = 5;
+            guna2HtmlLabel4.Text = "Ngày khởi hành *";
             // 
             // date_nkh
             // 
-            this.date_nkh.Checked = true;
-            this.date_nkh.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.date_nkh.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.date_nkh.Location = new System.Drawing.Point(49, 264);
-            this.date_nkh.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.date_nkh.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.date_nkh.Name = "date_nkh";
-            this.date_nkh.Size = new System.Drawing.Size(238, 36);
-            this.date_nkh.TabIndex = 6;
-            this.date_nkh.Value = new System.DateTime(2023, 7, 21, 22, 25, 38, 738);
-            this.date_nkh.ValueChanged += new System.EventHandler(this.date_nkh_ValueChanged);
+            date_nkh.Checked = true;
+            date_nkh.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            date_nkh.Format = DateTimePickerFormat.Long;
+            date_nkh.Location = new Point(49, 264);
+            date_nkh.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
+            date_nkh.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
+            date_nkh.Name = "date_nkh";
+            date_nkh.Size = new Size(238, 36);
+            date_nkh.TabIndex = 6;
+            date_nkh.Value = new DateTime(2023, 7, 21, 22, 25, 38, 738);
+            date_nkh.ValueChanged += date_nkh_ValueChanged;
             // 
             // btn_Search
             // 
-            this.btn_Search.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(90)))), ((int)(((byte)(4)))));
-            this.btn_Search.BorderRadius = 10;
-            this.btn_Search.BorderThickness = 1;
-            this.btn_Search.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Search.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Search.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Search.FillColor = System.Drawing.Color.Empty;
-            this.btn_Search.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_Search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(90)))), ((int)(((byte)(4)))));
-            this.btn_Search.Location = new System.Drawing.Point(48, 339);
-            this.btn_Search.Name = "btn_Search";
-            this.btn_Search.Size = new System.Drawing.Size(180, 45);
-            this.btn_Search.TabIndex = 7;
-            this.btn_Search.Text = "TÌM KIẾM";
-            this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
+            btn_Search.BorderColor = Color.FromArgb(123, 90, 4);
+            btn_Search.BorderRadius = 10;
+            btn_Search.BorderThickness = 1;
+            btn_Search.DisabledState.BorderColor = Color.DarkGray;
+            btn_Search.DisabledState.CustomBorderColor = Color.DarkGray;
+            btn_Search.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btn_Search.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btn_Search.FillColor = Color.Empty;
+            btn_Search.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_Search.ForeColor = Color.FromArgb(123, 90, 4);
+            btn_Search.Location = new Point(48, 339);
+            btn_Search.Name = "btn_Search";
+            btn_Search.Size = new Size(180, 45);
+            btn_Search.TabIndex = 7;
+            btn_Search.Text = "TÌM KIẾM";
+            btn_Search.Click += btn_Search_Click;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::GUI.Properties.Resources.icons8_exclamation_mark_30;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Location = new System.Drawing.Point(36, 57);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(37, 36);
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.BackgroundImage = Properties.Resources.icons8_exclamation_mark_30;
+            pictureBox1.BackgroundImageLayout = ImageLayout.Center;
+            pictureBox1.Location = new Point(36, 57);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(37, 36);
+            pictureBox1.TabIndex = 8;
+            pictureBox1.TabStop = false;
             // 
             // guna2HtmlLabel5
             // 
-            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(79, 67);
-            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(273, 20);
-            this.guna2HtmlLabel5.TabIndex = 9;
-            this.guna2HtmlLabel5.Text = "Lưu ý: *Trường bắt buộc nhập thông tin";
+            guna2HtmlLabel5.BackColor = Color.Transparent;
+            guna2HtmlLabel5.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2HtmlLabel5.Location = new Point(79, 67);
+            guna2HtmlLabel5.Name = "guna2HtmlLabel5";
+            guna2HtmlLabel5.Size = new Size(273, 20);
+            guna2HtmlLabel5.TabIndex = 9;
+            guna2HtmlLabel5.Text = "Lưu ý: *Trường bắt buộc nhập thông tin";
             // 
             // lb_ErrorTo
             // 
-            this.lb_ErrorTo.BackColor = System.Drawing.Color.Transparent;
-            this.lb_ErrorTo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lb_ErrorTo.Location = new System.Drawing.Point(360, 190);
-            this.lb_ErrorTo.Name = "lb_ErrorTo";
-            this.lb_ErrorTo.Size = new System.Drawing.Size(92, 20);
-            this.lb_ErrorTo.TabIndex = 11;
-            this.lb_ErrorTo.Text = "thông báo lỗi";
+            lb_ErrorTo.BackColor = Color.Transparent;
+            lb_ErrorTo.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lb_ErrorTo.Location = new Point(360, 190);
+            lb_ErrorTo.Name = "lb_ErrorTo";
+            lb_ErrorTo.Size = new Size(92, 20);
+            lb_ErrorTo.TabIndex = 11;
+            lb_ErrorTo.Text = "thông báo lỗi";
             // 
             // lb_ErrorFrom
             // 
-            this.lb_ErrorFrom.BackColor = System.Drawing.Color.Transparent;
-            this.lb_ErrorFrom.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lb_ErrorFrom.Location = new System.Drawing.Point(49, 190);
-            this.lb_ErrorFrom.Name = "lb_ErrorFrom";
-            this.lb_ErrorFrom.Size = new System.Drawing.Size(92, 20);
-            this.lb_ErrorFrom.TabIndex = 10;
-            this.lb_ErrorFrom.Text = "thông báo lỗi";
+            lb_ErrorFrom.BackColor = Color.Transparent;
+            lb_ErrorFrom.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lb_ErrorFrom.Location = new Point(49, 190);
+            lb_ErrorFrom.Name = "lb_ErrorFrom";
+            lb_ErrorFrom.Size = new Size(92, 20);
+            lb_ErrorFrom.TabIndex = 10;
+            lb_ErrorFrom.Text = "thông báo lỗi";
             // 
             // lb_ErrorDate
             // 
-            this.lb_ErrorDate.BackColor = System.Drawing.Color.Transparent;
-            this.lb_ErrorDate.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lb_ErrorDate.Location = new System.Drawing.Point(49, 306);
-            this.lb_ErrorDate.Name = "lb_ErrorDate";
-            this.lb_ErrorDate.Size = new System.Drawing.Size(92, 20);
-            this.lb_ErrorDate.TabIndex = 12;
-            this.lb_ErrorDate.Text = "thông báo lỗi";
+            lb_ErrorDate.BackColor = Color.Transparent;
+            lb_ErrorDate.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lb_ErrorDate.Location = new Point(49, 306);
+            lb_ErrorDate.Name = "lb_ErrorDate";
+            lb_ErrorDate.Size = new Size(92, 20);
+            lb_ErrorDate.TabIndex = 12;
+            lb_ErrorDate.Text = "thông báo lỗi";
             // 
             // FlichBay
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(786, 429);
-            this.Controls.Add(this.lb_ErrorDate);
-            this.Controls.Add(this.lb_ErrorTo);
-            this.Controls.Add(this.lb_ErrorFrom);
-            this.Controls.Add(this.guna2HtmlLabel5);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btn_Search);
-            this.Controls.Add(this.date_nkh);
-            this.Controls.Add(this.guna2HtmlLabel4);
-            this.Controls.Add(this.cbb_To);
-            this.Controls.Add(this.cbb_From);
-            this.Controls.Add(this.guna2HtmlLabel3);
-            this.Controls.Add(this.guna2HtmlLabel2);
-            this.Controls.Add(this.guna2HtmlLabel1);
-            this.Name = "FlichBay";
-            this.Text = "Lịch bay";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(786, 429);
+            Controls.Add(lb_ErrorDate);
+            Controls.Add(lb_ErrorTo);
+            Controls.Add(lb_ErrorFrom);
+            Controls.Add(guna2HtmlLabel5);
+            Controls.Add(pictureBox1);
+            Controls.Add(btn_Search);
+            Controls.Add(date_nkh);
+            Controls.Add(guna2HtmlLabel4);
+            Controls.Add(cbb_To);
+            Controls.Add(cbb_From);
+            Controls.Add(guna2HtmlLabel3);
+            Controls.Add(guna2HtmlLabel2);
+            Controls.Add(guna2HtmlLabel1);
+            Name = "FlichBay";
+            Text = "Lịch bay";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -234,15 +233,15 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2ComboBox cbb_From;
-        private Guna.UI2.WinForms.Guna2ComboBox cbb_To;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        private Guna.UI2.WinForms.Guna2DateTimePicker date_nkh;
-        private Guna.UI2.WinForms.Guna2Button btn_Search;
         private PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_ErrorTo;
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_ErrorFrom;
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_ErrorDate;
+        public Guna.UI2.WinForms.Guna2ComboBox cbb_From;
+        public Guna.UI2.WinForms.Guna2ComboBox cbb_To;
+        public Guna.UI2.WinForms.Guna2DateTimePicker date_nkh;
+        public Guna.UI2.WinForms.Guna2Button btn_Search;
     }
 }

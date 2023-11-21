@@ -66,20 +66,20 @@
             // 
             // guna2Button2
             // 
-            this.guna2Button2.BorderRadius = 10;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(67)))), ((int)(((byte)(55)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(463, 483);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button2.TabIndex = 3;
-            this.guna2Button2.Text = "Hủy";
-            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
+            guna2Button2.BorderRadius = 10;
+            guna2Button2.DisabledState.BorderColor = Color.DarkGray;
+            guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2Button2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2Button2.FillColor = Color.FromArgb(230, 67, 55);
+            guna2Button2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2Button2.ForeColor = Color.White;
+            guna2Button2.Location = new Point(463, 483);
+            guna2Button2.Name = "guna2Button2";
+            guna2Button2.Size = new Size(180, 45);
+            guna2Button2.TabIndex = 3;
+            guna2Button2.Text = "Hủy";
+            guna2Button2.Click += guna2Button2_Click;
             // 
             // guna2HtmlLabel1
             // 
@@ -255,8 +255,6 @@
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2Button button1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
@@ -272,5 +270,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_tom;
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_from;
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_CodeFlight;
+        public Guna.UI2.WinForms.Guna2Button button1;
+        public Guna.UI2.WinForms.Guna2Button guna2Button2;
     }
 }

@@ -229,15 +229,15 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
-        private TextBox tbx_passOld;
-        private TextBox tbx_passNew;
-        private TextBox tbx_passReNew;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl_email;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl_passOld;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl_passNew;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl_passReNew;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblWell;
+        public TextBox tbx_passOld;
+        public TextBox tbx_passNew;
+        public TextBox tbx_passReNew;
+        public Guna.UI2.WinForms.Guna2Button guna2Button1;
+        public Guna.UI2.WinForms.Guna2Button guna2Button2;
     }
 }

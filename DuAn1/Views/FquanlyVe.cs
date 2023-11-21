@@ -79,7 +79,7 @@ namespace DuAn1.Views
             }
         }
 
-        private void dgv_data_CellClick(object sender, DataGridViewCellEventArgs e)
+        public void dgv_data_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             date_NgayDi.Value = (DateTime)(dgv_data.CurrentRow.Cells[5].Value);
             date_NgayVe.Value = (DateTime)(dgv_data.CurrentRow.Cells[6].Value);
@@ -94,7 +94,7 @@ namespace DuAn1.Views
 
         }
 
-        private void btn_Search_Click(object sender, EventArgs e)
+        public void btn_Search_Click(object sender, EventArgs e)
         {
             dgv_data.Rows.Clear();
             dgv_data.ColumnCount = 12;

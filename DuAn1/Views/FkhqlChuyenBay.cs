@@ -52,7 +52,7 @@ namespace GUI.Views
             txt_FlightCode.Text = dgv_InforCus.Rows[0].Cells[5].Value.ToString();
         }
 
-        private void dgv_InforCus_CellClick(object sender, DataGridViewCellEventArgs e)
+        public void dgv_InforCus_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             txt_Name.Text = dgv_InforCus.CurrentRow.Cells[0].Value.ToString();
             txt_PhoneNumber.Text = dgv_InforCus.CurrentRow.Cells[1].Value.ToString();

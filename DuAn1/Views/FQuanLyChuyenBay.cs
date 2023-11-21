@@ -280,7 +280,7 @@ namespace DuAn1.Views
             }
             return true;
         }
-        private void btn_Add_Click(object sender, EventArgs e)
+        public void btn_Add_Click(object sender, EventArgs e)
         {
             check_price();
             if (checkTimeNow())
@@ -375,7 +375,7 @@ namespace DuAn1.Views
             }
 
         }
-        private void btn_Update_Click(object sender, EventArgs e)
+        public void btn_Update_Click(object sender, EventArgs e)
         {
             var flight = _flight.get_list().Where(c => c.Id == Convert.ToInt32(dgv_chuyenbay.CurrentRow.Cells[8].Value.ToString())).FirstOrDefault();
             flight.Status = flight.Status == 1 ? 0 : 1; // trạng thái của chuyến bay
@@ -383,7 +383,7 @@ namespace DuAn1.Views
             load();
         }
 
-        private void txb_Search_TextChanged(object sender, EventArgs e)
+        public void txb_Search_TextChanged(object sender, EventArgs e)
         {
             if (txb_Search.Text != "")
             {
@@ -407,7 +407,7 @@ namespace DuAn1.Views
             }
         }
 
-        private void dgv_chuyenbay_CellClick(object sender, DataGridViewCellEventArgs e)
+        public void dgv_chuyenbay_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             txb_codeflight.Text = dgv_chuyenbay.CurrentRow.Cells[2].Value.ToString();
             nbr_Price.Value = Convert.ToInt32(dgv_chuyenbay.CurrentRow.Cells[7].Value.ToString());

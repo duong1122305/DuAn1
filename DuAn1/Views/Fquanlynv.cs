@@ -32,7 +32,7 @@ namespace DuAn1
             lb_ErrorName.Visible = false;
             lb_ErrorPhone.Visible = false;
         }
-        private void loadData()
+        public void loadData()
         {
             dgrid_NhanVien.Rows.Clear();
             dgrid_NhanVien.ColumnCount = 4;
@@ -88,7 +88,7 @@ namespace DuAn1
             return true;
         }
         int check = 0;
-        private void button1_Click(object sender, EventArgs e)
+        public void button1_Click(object sender, EventArgs e)
         {
             if (check > 0)
             {
@@ -165,7 +165,7 @@ namespace DuAn1
             check++;
         }
 
-        private void btn_Sua_Click(object sender, EventArgs e)
+        public void btn_Sua_Click(object sender, EventArgs e)
         {
             staff staff = _inhanVienServices.getAllNhanVien().Where(c => c.Email == txt_Email.Text).FirstOrDefault();
             if (rbtn_onl.Checked)
@@ -181,7 +181,7 @@ namespace DuAn1
             loadData();
         }
 
-        private void dgrid_NhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
+        public void dgrid_NhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             txt_Ten.Enabled = false;
             txt_Email.Enabled = false;
@@ -200,7 +200,7 @@ namespace DuAn1
             }
         }
 
-        private void btn_Search_Click(object sender, EventArgs e)
+        public void btn_Search_Click(object sender, EventArgs e)
         {
             dgrid_NhanVien.Rows.Clear();
             dgrid_NhanVien.ColumnCount = 4;
@@ -240,7 +240,7 @@ namespace DuAn1
             }
         }
 
-        private void txt_Ten_TextChanged(object sender, EventArgs e)
+        public void txt_Ten_TextChanged(object sender, EventArgs e)
         {
             if (_validate.checkName(txt_Ten.Text))
             {
@@ -258,7 +258,7 @@ namespace DuAn1
             }
         }
 
-        private void txt_Sdt_TextChanged(object sender, EventArgs e)
+        public void txt_Sdt_TextChanged(object sender, EventArgs e)
         {
             if (_validate.checkPhoneNumber(txt_Sdt.Text))
             {
@@ -276,7 +276,7 @@ namespace DuAn1
             }
         }
 
-        private void txt_Email_TextChanged(object sender, EventArgs e)
+        public void txt_Email_TextChanged(object sender, EventArgs e)
         {
             if (_validate.checkEmail(txt_Email.Text))
             {

@@ -62,7 +62,7 @@ namespace DuAn1.Views
             lb_ErrorPass1.Visible = false;
             lb_ErrorDate.Visible = false;
         }
-        private bool check_duplicate_mail(string email)
+        public bool check_duplicate_mail(string email)
         {
             foreach (var item in _staffServices.list_staff())
             {
@@ -80,7 +80,7 @@ namespace DuAn1.Views
             }
             return false;
         }
-        private void btn_sign_Click(object sender, EventArgs e)
+        public void btn_sign_Click(object sender, EventArgs e)
         {
             if (txb_name.Text != "" || txb_address.Text != "" || txb_email.Text != "" || tbx_phone.Text != "" || tbx_pass1.Text != "" || tbx_pass2.Text != "")
             {
@@ -142,7 +142,7 @@ namespace DuAn1.Views
             btn_sign.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
         }
 
-        private void txb_email_TextChanged(object sender, EventArgs e)
+        public void txb_email_TextChanged(object sender, EventArgs e)
         {
             if (_validate.checkEmail(txb_email.Text))
             {
@@ -160,7 +160,7 @@ namespace DuAn1.Views
             }
         }
 
-        private void tbx_phone_TextChanged(object sender, EventArgs e)
+        public void tbx_phone_TextChanged(object sender, EventArgs e)
         {
             if (_validate.checkPhoneNumber(tbx_phone.Text))
             {
@@ -178,7 +178,7 @@ namespace DuAn1.Views
             }
         }
 
-        private void tbx_pass2_TextChanged(object sender, EventArgs e)
+        public void tbx_pass2_TextChanged(object sender, EventArgs e)
         {
             string pass1 = tbx_pass1.Text;
             string pass2 = tbx_pass2.Text;
@@ -198,7 +198,7 @@ namespace DuAn1.Views
             }
         }
 
-        private void txb_name_TextChanged(object sender, EventArgs e)
+        public void txb_name_TextChanged(object sender, EventArgs e)
         {
             if (_validate.checkName(txb_name.Text))
             {
@@ -218,7 +218,7 @@ namespace DuAn1.Views
         int minutes = 5;
         int seconds = 60;
         string code_otp = "";
-        private async void btn_SendCode_Click(object sender, EventArgs e)
+        public async void btn_SendCode_Click(object sender, EventArgs e)
         {
             bool check = true;
             foreach (var item in _dangKyService.GetCustomers())
@@ -273,7 +273,7 @@ namespace DuAn1.Views
             }
         }
 
-        private void CountDown_Tick(object sender, EventArgs e)
+        public void CountDown_Tick(object sender, EventArgs e)
         {
             btn_SendCode.Enabled = false;
             if (minutes > -2)
@@ -307,7 +307,7 @@ namespace DuAn1.Views
             }
         }
 
-        private void txb_Otp_TextChanged(object sender, EventArgs e)
+        public void txb_Otp_TextChanged(object sender, EventArgs e)
         {
             if (txb_Otp.Text == code_otp)
             {
@@ -325,7 +325,7 @@ namespace DuAn1.Views
             }
         }
 
-        private void tbx_pass1_TextChanged(object sender, EventArgs e)
+        public void tbx_pass1_TextChanged(object sender, EventArgs e)
         {
             if (_validate.checkpass(tbx_pass1.Text))
             {
@@ -342,7 +342,7 @@ namespace DuAn1.Views
             }
         }
 
-        private void Date_ValueChanged(object sender, EventArgs e)
+        public void Date_ValueChanged(object sender, EventArgs e)
         {
             DateTime now = DateTime.Now;
             TimeSpan time = now - Date.Value;
@@ -362,7 +362,7 @@ namespace DuAn1.Views
             }
         }
 
-        private void fDky_FormClosing(object sender, FormClosingEventArgs e)
+        public void fDky_FormClosing(object sender, FormClosingEventArgs e)
         {
             reset();
         }
