@@ -15,39 +15,12 @@ using Assert = Microsoft.VisualStudio.TestTools.UnitTesting.Assert;
 
 namespace TestProject4
 {
+    [TestFixture]
     public class Tests
     {
-        BookingAirlineContext _bookingAirlineContext;
-        IChucVuServices chucVuServices;
-        INhanVienRepon _nhanvienRepo;
-        StaffRepo _taffRepo;
-                Validate vl ;
-        CheckAccountType checkAccountType;
-
         [SetUp]
         public void Setup()
         {
-            chucVuServices = new ChucVuServices();
-            _bookingAirlineContext = new BookingAirlineContext();
-         vl = new Validate();
-            _nhanvienRepo = new NhanVienRepon(_bookingAirlineContext);
-            checkAccountType = new CheckAccountType();
-            _taffRepo = new StaffRepo();
         }
-
-        [Test]
-        public void Log_in1()
-        {
-            Form1 form = new Form1();
-            Fquanlynv f = new Fquanlynv();
-           
-            //form.Show();
-
-            //form.llb_forgot_LinkClicked(null, null);
-            //form.MouseClick(form.llb_forgot_LinkClicked(null,null));
-        }
-
-
-
     }
 }
