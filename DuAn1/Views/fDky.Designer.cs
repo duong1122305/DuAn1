@@ -603,23 +603,15 @@
         private TextBox textBox2;
         private Label label3;
         private PictureBox pictureBox4;
-        private TextBox txb_email;
         private Label label4;
-        private TextBox txb_name;
-        private ComboBox cbx_gender;
         private TextBox tbx_pass2;
-        private TextBox tbx_pass1;
-        private TextBox txb_address;
-        private TextBox tbx_phone;
         private Button btn_sign;
-        private DateTimePicker Date;
         private Label lb_ErrorEmail;
         private Label lb_ErrorPhoneNumber;
         private Label lb_ErrorPassAgain;
         private Label lb_ErrorName;
         private Label lb_ErrorOtp;
         private Button btn_SendCode;
-        private TextBox txb_Otp;
         private Panel time;
         private Label label10;
         private Label lb_Seconds;
@@ -627,5 +619,13 @@
         private System.Windows.Forms.Timer CountDown;
         private Label lb_ErrorPass1;
         private Label lb_ErrorDate;
+        public TextBox txb_email;
+        public TextBox txb_name;
+        public ComboBox cbx_gender;
+        public TextBox tbx_pass1;
+        public TextBox txb_address;
+        public TextBox tbx_phone;
+        public DateTimePicker Date;
+        public TextBox txb_Otp;
     }
 }

@@ -12,6 +12,8 @@ namespace DuAn1
 
     public partial class Form1 : Form
     {
+        public bool flag { get;set; }
+
         Validate _validate;
         CheckAccountType _checkAccountType;
         QlykhachHang _f;
@@ -111,27 +113,26 @@ namespace DuAn1
 
             if (_checkAccountType.CheckType(tb_user.Text, _validate.ReversePass(tb_pass.Text)) == 1)
             {
+                MessageBox.Show("Đăng nhập thành công", "Thông báo!");
                 _role = 0;
                 fStaff _fst = new fStaff(_role, tb_user.Text);
-
                 this.Hide();
-                //MessageBox.Show("Đăng nhập admin thành công", "Thông báo!");
                 _fst.ShowDialog();
                 this.Show();
             }
             else if (_checkAccountType.CheckType(tb_user.Text, _validate.ReversePass(tb_pass.Text)) == 2)
             {
+                MessageBox.Show("Đăng nhập thành công", "Thông báo!");
                 _role = 1;
                 fStaff _fst = new fStaff(_role, tb_user.Text);
                 this.Hide();
-                //MessageBox.Show("Đăng nhập nhân viên thành công", "Thông báo!");
                 _fst.ShowDialog();
                 this.Show();
             }
             else if (_checkAccountType.CheckType(tb_user.Text, _validate.ReversePass(tb_pass.Text)) == 3)
             {
+                MessageBox.Show("Đăng nhập thành công", "Thông báo!");
                 this.Hide();
-                //MessageBox.Show("Đăng nhập thành công", "Thông báo!");
                 FHomeUser fHomeUser = new FHomeUser(tb_user.Text);
                 fHomeUser.ShowDialog();
                 this.Show();

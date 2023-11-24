@@ -199,14 +199,14 @@
             // đổiMậtKhẩuToolStripMenuItem1
             // 
             đổiMậtKhẩuToolStripMenuItem1.Name = "đổiMậtKhẩuToolStripMenuItem1";
-            đổiMậtKhẩuToolStripMenuItem1.Size = new Size(168, 22);
+            đổiMậtKhẩuToolStripMenuItem1.Size = new Size(180, 22);
             đổiMậtKhẩuToolStripMenuItem1.Text = "Đổi mật khẩu";
             đổiMậtKhẩuToolStripMenuItem1.Click += đổiMậtKhẩuToolStripMenuItem1_Click;
             // 
             // đăngXuấtToolStripMenuItem1
             // 
             đăngXuấtToolStripMenuItem1.Name = "đăngXuấtToolStripMenuItem1";
-            đăngXuấtToolStripMenuItem1.Size = new Size(168, 22);
+            đăngXuấtToolStripMenuItem1.Size = new Size(180, 22);
             đăngXuấtToolStripMenuItem1.Text = "Đăng xuất";
             đăngXuấtToolStripMenuItem1.Click += đăngXuấtToolStripMenuItem1_Click_1;
             // 
@@ -245,14 +245,14 @@
         private ToolStripMenuItem đăngXuấtToolStripMenuItem;
         private ToolStripMenuItem đổiMậtKhẩuToolStripMenuItem;
         private MenuStrip menuStrip2;
-        private ToolStripMenuItem hệThốngToolStripMenuItem1;
-        private ToolStripMenuItem đổiMậtKhẩuToolStripMenuItem1;
-        private ToolStripMenuItem đăngXuấtToolStripMenuItem1;
         public Button btn_dthu;
         public Button btn_qlynv;
         public Button btn_qlykh;
         public Button btn_qlyflight;
         public Button btn_qlyve;
         public Button btn_addPlane;
+        public ToolStripMenuItem hệThốngToolStripMenuItem1;
+        public ToolStripMenuItem đổiMậtKhẩuToolStripMenuItem1;
+        public ToolStripMenuItem đăngXuấtToolStripMenuItem1;
     }
 }

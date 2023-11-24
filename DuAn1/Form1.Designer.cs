@@ -37,12 +37,12 @@
             pictureBox1 = new PictureBox();
             btn_login = new Button();
             llb_forgot = new LinkLabel();
-            llb_dki = new LinkLabel();
             cb_reme = new CheckBox();
             tb_pass = new TextBox();
             tb_user = new TextBox();
             label3 = new Label();
             label2 = new Label();
+            llb_dki = new LinkLabel();
             label1 = new Label();
             label4 = new Label();
             timer1 = new System.Windows.Forms.Timer(components);
@@ -61,12 +61,12 @@
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(btn_login);
             panel1.Controls.Add(llb_forgot);
-            panel1.Controls.Add(llb_dki);
             panel1.Controls.Add(cb_reme);
             panel1.Controls.Add(tb_pass);
             panel1.Controls.Add(tb_user);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label2);
+            panel1.Controls.Add(llb_dki);
             panel1.Location = new Point(433, 56);
             panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
@@ -135,25 +135,13 @@
             // 
             llb_forgot.AutoSize = true;
             llb_forgot.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
-            llb_forgot.Location = new Point(247, 256);
+            llb_forgot.Location = new Point(254, 256);
             llb_forgot.Name = "llb_forgot";
             llb_forgot.Size = new Size(85, 13);
             llb_forgot.TabIndex = 7;
             llb_forgot.TabStop = true;
             llb_forgot.Text = "Quên mật khẩu?";
             llb_forgot.LinkClicked += llb_forgot_LinkClicked;
-            // 
-            // llb_dki
-            // 
-            llb_dki.AutoSize = true;
-            llb_dki.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
-            llb_dki.Location = new Point(200, 256);
-            llb_dki.Name = "llb_dki";
-            llb_dki.Size = new Size(47, 13);
-            llb_dki.TabIndex = 6;
-            llb_dki.TabStop = true;
-            llb_dki.Text = "Đăng ký";
-            llb_dki.LinkClicked += llb_dki_LinkClicked;
             // 
             // cb_reme
             // 
@@ -209,6 +197,18 @@
             label2.TabIndex = 1;
             label2.Text = "Email";
             // 
+            // llb_dki
+            // 
+            llb_dki.AutoSize = true;
+            llb_dki.Font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            llb_dki.Location = new Point(203, 256);
+            llb_dki.Name = "llb_dki";
+            llb_dki.Size = new Size(47, 13);
+            llb_dki.TabIndex = 6;
+            llb_dki.TabStop = true;
+            llb_dki.Text = "Đăng ký";
+            llb_dki.LinkClicked += llb_dki_LinkClicked;
+            // 
             // label1
             // 
             label1.BackColor = Color.Transparent;
@@ -261,10 +261,6 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
-        private Button btn_login;
-        private LinkLabel llb_forgot;
-        private LinkLabel llb_dki;
-        private CheckBox cb_reme;
         public TextBox tb_pass;
         public TextBox tb_user;
         private Label label3;
@@ -273,6 +269,10 @@
         private Label label4;
         private System.Windows.Forms.Timer timer1;
         private Label label5;
+        public Button btn_login;
+        public LinkLabel llb_forgot;
+        public LinkLabel llb_dki;
+        public CheckBox cb_reme;
     }
     //<<<<<<< HEAD
 
