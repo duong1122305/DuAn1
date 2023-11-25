@@ -34,7 +34,7 @@ namespace TestProject4
 
             drive = new WindowsDriver<WindowsElement>(new Uri("http://127.0.0.1:4723"), options);
 
-            System.Threading.Thread.Sleep(2000);
+            System.Threading.Thread.Sleep(1000);
         }
 
         [TearDown]
@@ -47,7 +47,7 @@ namespace TestProject4
         //tài khoản mật khẩu trống
         //Hiện ra thông báo vui lòng không để trống email và mật khẩu
         [Test]
-        public void DN1()
+        public void TestCase_DN1()
         {
             taiKhoan.SendKeys("");
             matKhau.SendKeys("");
@@ -68,7 +68,7 @@ namespace TestProject4
         //Đăng nhập thất bại!
         //Hiển thị thông báo email không đúng định dạng
         [Test]
-        public void DN2()
+        public void TestCase_DN2()
         {
 
             taiKhoan.SendKeys("admin");
@@ -90,7 +90,7 @@ namespace TestProject4
 
         //Đăng nhập thành công!
         [Test]
-        public void DN3()
+        public void TestCase_DN3()
         {
             taiKhoan.SendKeys("halv@gmail.com");
             matKhau.SendKeys("1");
@@ -99,7 +99,7 @@ namespace TestProject4
             WindowsElement thongpao = drive.FindElementByAccessibilityId("65535");
             //chuyển sang form giao diện các chức năng khi đăng nhập thành công
             drive.SwitchTo().Window(drive.WindowHandles.Last());
-            Thread.Sleep(4000);
+            Thread.Sleep(3000);
             Assert.AreEqual(expected, thongpao.Text);
             thongBao.Click();
         }
@@ -107,7 +107,7 @@ namespace TestProject4
         //Đăng nhập thất bại!
         //Không được để trống email và mật khẩu phải có độ dài là 6
         [Test]
-        public void DN4()
+        public void TestCase_DN4()
         {
             //hành động
             taiKhoan.SendKeys("");
@@ -130,7 +130,7 @@ namespace TestProject4
         ////Đăng nhập thất bại!
         //Mật khẩu không được quá 6 kí tự
         [Test]
-        public void DN5()
+        public void TestCase_DN5()
         {
             taiKhoan.SendKeys("halv@gmail.com");
             matKhau.SendKeys("1234567899");

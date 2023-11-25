@@ -51,13 +51,11 @@ namespace TestProject4
             thongBao.Click();
         }
 
-        //Xuất file trên quản lý doanh thu
 
-        //Chức năng lọc từ ngày 
         [Test]
         public void TestCase_GDCCN_QLDT1()
         {
-
+            Actions actions = new Actions(drive);
             SendKey();
 
             drive.SwitchTo().Window(drive.WindowHandles.Last());
@@ -65,24 +63,18 @@ namespace TestProject4
 
             //drive.FindElementByAccessibilityId("date_From").Click();
 
-            drive.FindElementByAccessibilityId("date_To").Click();
-            Thread.Sleep(3000);
+            WindowsElement dateTimepick = drive.FindElementByAccessibilityId("date_From");
+            actions.MoveToElement(dateTimepick).KeyUp(Keys.Alt).Click().Perform();
+            Thread.Sleep(1000);
 
-
-            WebDriverWait wait2 = new WebDriverWait(drive, TimeSpan.FromSeconds(1000));
-            
-            string btn = drive.FindElementByName("Previous Button").Text;
-
-            //drive.FindElementByName("File name").SendKeys("Test");
-            WebDriverWait wait = new WebDriverWait(drive, TimeSpan.FromSeconds(1000));
-
+            Thread.Sleep(2000);
+            //WebDriverWait wait = new WebDriverWait(drive, TimeSpan.FromSeconds(1000));
             Thread.Sleep(1000);
             WindowsElement thongBap = drive.FindElementByAccessibilityId("65535");
             actual = thongBap.Text;
             drive.FindElementByAccessibilityId("2").Click();
             Assert.AreEqual("Ngày sau không thể nhỏ hơn ngày trước", actual);
-
-
+            drive.CloseApp();
         }
 
         //xuất file thành công
@@ -114,6 +106,29 @@ namespace TestProject4
             Assert.AreEqual("Xuất file thành công!", actual);
 
 
+        }
+        //Chức năng lọc từ ngày 
+        [Test]
+        public void TestCase_GDCCN_QLDT3()
+        {
+            Actions actions = new Actions(drive);
+            SendKey();
+
+            drive.SwitchTo().Window(drive.WindowHandles.Last());
+            drive.FindElementByAccessibilityId("btn_dthu").Click();
+
+            //drive.FindElementByAccessibilityId("date_From").Click();
+
+            WindowsElement dateTimepick = drive.FindElementByAccessibilityId("date_To");
+            actions.MoveToElement(dateTimepick).SendKeys(Keys.LeftControl).Click().Perform();
+
+            Thread.Sleep(2000);
+            //WebDriverWait wait = new WebDriverWait(drive, TimeSpan.FromSeconds(1000));
+            Thread.Sleep(1000);
+            WindowsElement thongBap = drive.FindElementByAccessibilityId("65535");
+            actual = thongBap.Text;
+            drive.FindElementByAccessibilityId("2").Click();
+            Assert.AreEqual("Ngày sau không thể nhỏ hơn ngày trước", actual);
         }
 
 
