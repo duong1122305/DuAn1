@@ -65,7 +65,7 @@ namespace DuAn1.Views
                     if (await _validate.SendEmailVerify(email, subject, body, code_otp, role_id))
                     {
                         time.Visible = true;
-                        MessageBox.Show("Mã xác thực đã được gửi đến email của bạn");
+                        MessageBox.Show("Mã xác thực đã được gửi đến email của bạn"+code_otp);
                         btn_sendCode.Enabled = false;
                         btn_success.Enabled = true;
                     }

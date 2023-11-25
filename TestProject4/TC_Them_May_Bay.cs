@@ -184,7 +184,7 @@ namespace TestProject4
             Thread.Sleep(3000);
             drive.FindElementByAccessibilityId("2").Click();
 
-            Assert.AreEqual("Vui lòng nhập đầy đủ thông tin", actual);
+            Assert.AreEqual("Vui lòng nhập tên máy bay", actual);
         }
 
         //Để trống dữ liệu ô mã máy bay và cập nhật
@@ -222,7 +222,7 @@ namespace TestProject4
             Thread.Sleep(3000);
             drive.FindElementByAccessibilityId("2").Click();
 
-            Assert.AreEqual("Vui lòng nhập đầy đủ thông tin", actual);
+            Assert.AreEqual("Vui lòng nhập mã máy bay", actual);
         }
     }
 }

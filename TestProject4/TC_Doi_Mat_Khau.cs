@@ -9,7 +9,7 @@ using TestStack.White.UIItems.WindowItems;
 namespace TestProject4
 {
     [TestFixture]
-    public class TC_TTTK
+    public class TC_Doi_Mat_Khau
     {
         //các nút và textbox trong forrm login
         public WindowsElement taiKhoan => drive.FindElementByAccessibilityId("tb_user");
@@ -44,58 +44,59 @@ namespace TestProject4
             drive.Quit();
         }
         
-        void send()
+        void sendNhanVien()//đăng nhập vào tài khoản nhân viên
         {
-            taiKhoan.SendKeys("cus1@gmail.com");
+            taiKhoan.SendKeys("luyenlv@gmail.com");
             matKhau.SendKeys("1");
+            dangNhap.Click();
+        }
+
+        void sendCus()//đăng nhập vào tài khoản khách
+        {
+            taiKhoan.SendKeys("vpnbi7389@gmail.com");
+            matKhau.SendKeys("binh@12345");
             dangNhap.Click();
         }
 
         //Thông tin tài khoản
         [Test]
-        public void TestCase_TTTK1()
+        public void TestCase_GDCCN_HT_ĐMK1()
         {
 
             //thao tác
-            send();
+            sendNhanVien();
             thongBao.Click();
             //chờ
             WebDriverWait wait = new WebDriverWait(drive, TimeSpan.FromSeconds(1000));
             drive.SwitchTo().Window(drive.WindowHandles.Last());
 
-            WindowsElement nguoiDung = drive.FindElementByName("Người dùng");
-            nguoiDung.Click();
+            WindowsElement heThong = drive.FindElementByName("Hệ thống");
+            heThong.Click();
 
-            WindowsElement tttk = drive.FindElementByName("Thông tin tài khoản");
-            tttk.Click();
+            WindowsElement dkm = drive.FindElementByName("Đổi mật khẩu");
+            dkm.Click();
 
             Thread.Sleep(1000);
 
-            drive.FindElementByAccessibilityId("btn_sua").Click();
-
-            drive.FindElementByAccessibilityId("tbx_hoTen").SendKeys("Nguyễn đức việt34");
-            drive.FindElementByAccessibilityId("cbx_gt").Click();
-            Thread.Sleep(1000);
-            WindowsElement N= drive.FindElementByName("Nữ");
-            acc.MoveToElement(N).Click().Perform();
-            drive.FindElementByAccessibilityId("tbx_sdt").SendKeys("0923456789");
-            drive.FindElementByAccessibilityId("tbx_diaChi").SendKeys("Yên Bái");
-
-            drive.FindElementByAccessibilityId("btn_update").Click();
-
+            drive.FindElementByAccessibilityId("tbx_passOld").SendKeys("1");
+            drive.FindElementByAccessibilityId("tbx_passNew").SendKeys("binh@2003");
+            drive.FindElementByAccessibilityId("tbx_passReNew").SendKeys("binh@2003");
+            drive.FindElementByAccessibilityId("btn_doiMK").Click();
             WindowsElement er = drive.FindElementByAccessibilityId("65535");
             actual = er.Text;
             Thread.Sleep(2000);
             drive.FindElementByAccessibilityId("2").Click();
-            Assert.AreEqual("Thông tin bạn nhập chưa đúng yêu cầu", actual);
+            drive.FindElementByAccessibilityId("btn_Out").Click();
+            Assert.AreEqual("Đổi mật khẩu thành công", actual);
         }
 
-        //Thông tin tài khoản
+
         [Test]
-        public void TestCase_TTTK2()
+        public void TestCase_GDCCN_HT_ĐMK2()
         {
+
             //thao tác
-            send();
+            sendCus();
             thongBao.Click();
             //chờ
             WebDriverWait wait = new WebDriverWait(drive, TimeSpan.FromSeconds(1000));
@@ -104,31 +105,31 @@ namespace TestProject4
             WindowsElement nguoiDung = drive.FindElementByName("Người dùng");
             nguoiDung.Click();
 
-            WindowsElement tttk = drive.FindElementByName("Thông tin tài khoản");
-            tttk.Click();
-            //drive.SwitchTo().Window(drive.WindowHandles.Last());
+            WindowsElement dkm = drive.FindElementByName("Đổi mật khẩu");
+            dkm.Click();
+
             Thread.Sleep(1000);
-            drive.FindElementByAccessibilityId("btn_sua").Click();
-            drive.FindElementByAccessibilityId("tbx_hoTen").SendKeys("Nguyễn đức việt");
-            drive.FindElementByAccessibilityId("cbx_gt").Click();
-            WindowsElement N = drive.FindElementByName("Nam");
-            acc.MoveToElement(N).Click().Perform();
-            drive.FindElementByAccessibilityId("tbx_sdt").SendKeys("092345678921");
-            drive.FindElementByAccessibilityId("tbx_diaChi").SendKeys("Yên Bái");
-            drive.FindElementByAccessibilityId("btn_update").Click();
+
+            drive.FindElementByAccessibilityId("tbx_passOld").SendKeys("binh@12345");
+            drive.FindElementByAccessibilityId("tbx_passNew").SendKeys("binh2003@");
+            drive.FindElementByAccessibilityId("tbx_passReNew").SendKeys("binh2003@");
+
+            drive.FindElementByAccessibilityId("btn_doiMK").Click();
             WindowsElement er = drive.FindElementByAccessibilityId("65535");
             actual = er.Text;
+            Thread.Sleep(2000);
             drive.FindElementByAccessibilityId("2").Click();
-            Assert.AreEqual("Vui lòng nhập đúng số điện thoại", actual);
-            drive.Close();
+            drive.FindElementByAccessibilityId("btn_Out").Click();
+            Assert.AreEqual("Đổi mật khẩu thành công!", actual);
         }
 
-        //Thông tin tài khoản
+
         [Test]
-        public void TestCase_TTTK3()
+        public void TestCase_GDCCN_HT_ĐMK3()
         {
+
             //thao tác
-            send();
+            sendCus();
             thongBao.Click();
             //chờ
             WebDriverWait wait = new WebDriverWait(drive, TimeSpan.FromSeconds(1000));
@@ -137,30 +138,24 @@ namespace TestProject4
             WindowsElement nguoiDung = drive.FindElementByName("Người dùng");
             nguoiDung.Click();
 
-            WindowsElement tttk = drive.FindElementByName("Thông tin tài khoản");
-            tttk.Click();
+            WindowsElement dkm = drive.FindElementByName("Đổi mật khẩu");
+            dkm.Click();
 
             Thread.Sleep(1000);
 
-            drive.FindElementByAccessibilityId("btn_sua").Click();
+            drive.FindElementByAccessibilityId("tbx_passOld").SendKeys("binh20031@");
+            drive.FindElementByAccessibilityId("tbx_passNew").SendKeys("binh@12345");
+            drive.FindElementByAccessibilityId("tbx_passReNew").SendKeys("binh@12345");
 
-            drive.FindElementByAccessibilityId("tbx_hoTen").SendKeys("Nguyễn đức việt");
-            drive.FindElementByAccessibilityId("cbx_gt").Click();
-
-            WindowsElement N = drive.FindElementByName("Nữ");
-            acc.MoveToElement(N).Click().Perform();
-
-            drive.FindElementByAccessibilityId("tbx_sdt").SendKeys("0923456789");
-            drive.FindElementByAccessibilityId("tbx_diaChi").SendKeys("Yên Bái");
-
-            drive.FindElementByAccessibilityId("btn_update").Click();
-
+            drive.FindElementByAccessibilityId("btn_doiMK").Click();
             WindowsElement er = drive.FindElementByAccessibilityId("65535");
             actual = er.Text;
+            Thread.Sleep(2000);
             drive.FindElementByAccessibilityId("2").Click();
-            drive.SwitchTo().Window(drive.WindowHandles.First());
-
-            Assert.AreEqual("Cập nhật thành công", actual);
+            drive.FindElementByAccessibilityId("btn_Out").Click();
+            Assert.AreEqual("Mật khẩu không được quá 6 kí tự", actual);
         }
+
+
     }
 }

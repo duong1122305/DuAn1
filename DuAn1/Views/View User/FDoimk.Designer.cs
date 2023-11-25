@@ -36,8 +36,8 @@
             tbx_passOld = new TextBox();
             tbx_passNew = new TextBox();
             tbx_passReNew = new TextBox();
-            guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            btn_doiMK = new Guna.UI2.WinForms.Guna2Button();
+            btn_Out = new Guna.UI2.WinForms.Guna2Button();
             lbl_email = new Guna.UI2.WinForms.Guna2HtmlLabel();
             lbl_passOld = new Guna.UI2.WinForms.Guna2HtmlLabel();
             lbl_passNew = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -114,39 +114,39 @@
             tbx_passReNew.TabIndex = 3;
             tbx_passReNew.TextChanged += tbx_passReNew_TextChanged;
             // 
-            // guna2Button1
+            // btn_doiMK
             // 
-            guna2Button1.BorderRadius = 10;
-            guna2Button1.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button1.FillColor = Color.DarkCyan;
-            guna2Button1.Font = new Font("Arial", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2Button1.ForeColor = Color.White;
-            guna2Button1.Location = new Point(200, 337);
-            guna2Button1.Name = "guna2Button1";
-            guna2Button1.Size = new Size(108, 38);
-            guna2Button1.TabIndex = 9;
-            guna2Button1.Text = "Đổi mật khẩu";
-            guna2Button1.Click += guna2Button1_Click;
+            btn_doiMK.BorderRadius = 10;
+            btn_doiMK.DisabledState.BorderColor = Color.DarkGray;
+            btn_doiMK.DisabledState.CustomBorderColor = Color.DarkGray;
+            btn_doiMK.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btn_doiMK.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btn_doiMK.FillColor = Color.DarkCyan;
+            btn_doiMK.Font = new Font("Arial", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_doiMK.ForeColor = Color.White;
+            btn_doiMK.Location = new Point(200, 337);
+            btn_doiMK.Name = "btn_doiMK";
+            btn_doiMK.Size = new Size(108, 38);
+            btn_doiMK.TabIndex = 9;
+            btn_doiMK.Text = "Đổi mật khẩu";
+            btn_doiMK.Click += guna2Button1_Click;
             // 
-            // guna2Button2
+            // btn_Out
             // 
-            guna2Button2.BorderRadius = 10;
-            guna2Button2.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button2.FillColor = Color.DarkCyan;
-            guna2Button2.Font = new Font("Arial", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2Button2.ForeColor = Color.White;
-            guna2Button2.Location = new Point(314, 337);
-            guna2Button2.Name = "guna2Button2";
-            guna2Button2.Size = new Size(108, 38);
-            guna2Button2.TabIndex = 10;
-            guna2Button2.Text = "Thoát";
-            guna2Button2.Click += guna2Button2_Click;
+            btn_Out.BorderRadius = 10;
+            btn_Out.DisabledState.BorderColor = Color.DarkGray;
+            btn_Out.DisabledState.CustomBorderColor = Color.DarkGray;
+            btn_Out.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btn_Out.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btn_Out.FillColor = Color.DarkCyan;
+            btn_Out.Font = new Font("Arial", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_Out.ForeColor = Color.White;
+            btn_Out.Location = new Point(314, 337);
+            btn_Out.Name = "btn_Out";
+            btn_Out.Size = new Size(108, 38);
+            btn_Out.TabIndex = 10;
+            btn_Out.Text = "Thoát";
+            btn_Out.Click += guna2Button2_Click;
             // 
             // lbl_email
             // 
@@ -206,8 +206,8 @@
             Controls.Add(lbl_passNew);
             Controls.Add(lbl_passOld);
             Controls.Add(lbl_email);
-            Controls.Add(guna2Button2);
-            Controls.Add(guna2Button1);
+            Controls.Add(btn_Out);
+            Controls.Add(btn_doiMK);
             Controls.Add(tbx_passReNew);
             Controls.Add(tbx_passNew);
             Controls.Add(tbx_passOld);
@@ -237,7 +237,7 @@
         public TextBox tbx_passOld;
         public TextBox tbx_passNew;
         public TextBox tbx_passReNew;
-        public Guna.UI2.WinForms.Guna2Button guna2Button1;
-        public Guna.UI2.WinForms.Guna2Button guna2Button2;
+        public Guna.UI2.WinForms.Guna2Button btn_doiMK;
+        public Guna.UI2.WinForms.Guna2Button btn_Out;
     }
 }
