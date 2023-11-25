@@ -315,7 +315,7 @@
             cbx_gender.Location = new Point(23, 359);
             cbx_gender.Margin = new Padding(3, 4, 3, 4);
             cbx_gender.Name = "cbx_gender";
-            cbx_gender.Size = new Size(195, 23);
+            cbx_gender.Size = new Size(73, 23);
             cbx_gender.TabIndex = 7;
             // 
             // pictureBox9

@@ -48,6 +48,8 @@
             label1 = new Label();
             groupBox2 = new GroupBox();
             dtgv_kh = new DataGridView();
+            tb_email = new TextBox();
+            label9 = new Label();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dtgv_kh).BeginInit();
@@ -56,6 +58,8 @@
             // groupBox1
             // 
             groupBox1.BackColor = Color.White;
+            groupBox1.Controls.Add(tb_email);
+            groupBox1.Controls.Add(label9);
             groupBox1.Controls.Add(tb_status);
             groupBox1.Controls.Add(btn_find);
             groupBox1.Controls.Add(tb_gender);
@@ -274,6 +278,25 @@
             dtgv_kh.TabIndex = 0;
             dtgv_kh.CellClick += dtgv_kh_CellClick;
             // 
+            // tb_email
+            // 
+            tb_email.Font = new Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_email.Location = new Point(776, 80);
+            tb_email.Name = "tb_email";
+            tb_email.ReadOnly = true;
+            tb_email.Size = new Size(179, 21);
+            tb_email.TabIndex = 26;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label9.Location = new Point(662, 83);
+            label9.Name = "label9";
+            label9.Size = new Size(48, 18);
+            label9.TabIndex = 27;
+            label9.Text = "Email";
+            // 
             // QlykhachHang
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -315,5 +338,7 @@
         public TextBox textBox3;
         public Guna.UI2.WinForms.Guna2Button btn_find;
         public TextBox tb_status;
+        public TextBox tb_email;
+        public Label label9;
     }
 }

@@ -143,7 +143,6 @@ namespace _2_BUS.Validate
                 string senderPassword = staff.Password;
                 string body = _body;
                 MailMessage mail = new MailMessage();
-
                 SmtpClient smtp = new SmtpClient();
                 try
                 {

@@ -48,6 +48,7 @@ namespace DuAn1.Views
         {
             id = int.Parse(dtgv_kh.CurrentRow.Cells[0].Value.ToString());
             tb_name.Text = dtgv_kh.CurrentRow.Cells[1].Value.ToString();
+            tb_email.Text = dtgv_kh.CurrentRow.Cells[2].Value.ToString();
             tb_gender.Text = dtgv_kh.CurrentRow.Cells[6].Value.ToString();
             tb_phone.Text = dtgv_kh.CurrentRow.Cells[4].Value.ToString();
             rtb_addr.Text = dtgv_kh.CurrentRow.Cells[5].Value.ToString();

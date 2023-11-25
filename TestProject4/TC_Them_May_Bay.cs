@@ -81,6 +81,7 @@ namespace TestProject4
         [Test]
         public void TestCase_GDCCN_TMB2()
         {
+            Actions acc = new Actions(drive);
             SendKey();
 
             drive.SwitchTo().Window(drive.WindowHandles.Last());
@@ -88,7 +89,7 @@ namespace TestProject4
             WindowsElement btnPlane = drive.FindElementByAccessibilityId("btn_addPlane");
             btnPlane.Click();
 
-            drive.FindElementByAccessibilityId("txt_PlaneCode").SendKeys("Plane_11");
+            drive.FindElementByAccessibilityId("txt_PlaneCode").SendKeys("Plane_15");
 
             drive.FindElementByAccessibilityId("txt_NamePlane").SendKeys("TikiLazada");
 
@@ -96,8 +97,8 @@ namespace TestProject4
             drive.FindElementByAccessibilityId("cmb_totalSeats").Click();
 
             //chọn số ghế là 30
-            drive.FindElementByName("30").Click();
-
+            WindowsElement seat30 = drive.FindElementByName("50");
+            acc.MoveToElement(seat30).Click().Perform();
 
             drive.FindElementByAccessibilityId("btn_add").Click();
 
@@ -122,13 +123,15 @@ namespace TestProject4
             btnPlane.Click();
 
 
-            drive.FindElementByAccessibilityId("4221477321").Click();
+            drive.FindElementByAccessibilityId("dgv_dataPlane").Click();
+            //drive.FindElementByName("4219723089").Click();
+            drive.FindElementByName("Row 8").Click();
 
             //điền thông tin vào ô mã máy bay
             //drive.FindElementByAccessibilityId("txt_PlaneCode").SendKeys("Plane_11");
 
             //điền thông tin vào ô tên máy bay
-            drive.FindElementByAccessibilityId("txt_NamePlane").SendKeys("TikiLazada55");
+            drive.FindElementByAccessibilityId("txt_NamePlane").SendKeys("TikiLazada5678");
 
             //ấn vào ô chọn số ghế
             //drive.FindElementByAccessibilityId("cmb_totalSeats").Click();
@@ -144,6 +147,82 @@ namespace TestProject4
             drive.FindElementByAccessibilityId("2").Click();
 
             Assert.AreEqual("Sửa thành công", actual);
+        }
+
+        //Để trống dữ liệu ô tên máy bay và cập nhật
+        [Test]
+        public void TestCase_GDCCN_TMB4()
+        {
+            SendKey();
+
+            drive.SwitchTo().Window(drive.WindowHandles.Last());
+
+            WindowsElement btnPlane = drive.FindElementByAccessibilityId("btn_addPlane");
+            btnPlane.Click();
+
+
+            drive.FindElementByAccessibilityId("dgv_dataPlane").Click();
+            //drive.FindElementByName("4219723089").Click();
+            drive.FindElementByName("Row 8").Click();
+
+            //điền thông tin vào ô mã máy bay
+            //drive.FindElementByAccessibilityId("txt_PlaneCode").SendKeys("Plane_11");
+
+            //xóa thông tin ô tên máy bay
+            drive.FindElementByAccessibilityId("txt_NamePlane").Clear();
+
+            //ấn vào ô chọn số ghế
+            //drive.FindElementByAccessibilityId("cmb_totalSeats").Click();
+
+            //chọn số ghế là 30
+            //drive.FindElementByName("30").Click();
+            drive.FindElementByAccessibilityId("btn_update").Click();
+
+            WindowsElement thongBaox = drive.FindElementByAccessibilityId("65535");
+            actual = thongBaox.Text;
+
+            Thread.Sleep(3000);
+            drive.FindElementByAccessibilityId("2").Click();
+
+            Assert.AreEqual("Vui lòng nhập đầy đủ thông tin", actual);
+        }
+
+        //Để trống dữ liệu ô mã máy bay và cập nhật
+        [Test]
+        public void TestCase_GDCCN_TMB5()
+        {
+            SendKey();
+
+            drive.SwitchTo().Window(drive.WindowHandles.Last());
+
+            WindowsElement btnPlane = drive.FindElementByAccessibilityId("btn_addPlane");
+            btnPlane.Click();
+
+
+            drive.FindElementByAccessibilityId("dgv_dataPlane").Click();
+            //drive.FindElementByName("4219723089").Click();
+            drive.FindElementByName("Row 8").Click();
+
+            //điền thông tin vào ô mã máy bay
+            //drive.FindElementByAccessibilityId("txt_PlaneCode").SendKeys("Plane_11");
+
+            //xóa thông tin ô tên máy bay
+            drive.FindElementByAccessibilityId("txt_PlaneCode").Clear();
+
+            //ấn vào ô chọn số ghế
+            //drive.FindElementByAccessibilityId("cmb_totalSeats").Click();
+
+            //chọn số ghế là 30
+            //drive.FindElementByName("30").Click();
+            drive.FindElementByAccessibilityId("btn_update").Click();
+
+            WindowsElement thongBaox = drive.FindElementByAccessibilityId("65535");
+            actual = thongBaox.Text;
+
+            Thread.Sleep(3000);
+            drive.FindElementByAccessibilityId("2").Click();
+
+            Assert.AreEqual("Vui lòng nhập đầy đủ thông tin", actual);
         }
     }
 }
