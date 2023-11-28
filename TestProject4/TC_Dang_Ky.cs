@@ -116,6 +116,7 @@ namespace TestProject4
             Thread.Sleep(2000);
            WindowsElement su = drive.FindElementByAccessibilityId("66535");
             actual = su.Text;
+            //Điền đúng thông tin được yêu cầu!
             Assert.AreEqual("Đăng ký thành công", actual);
         }
 

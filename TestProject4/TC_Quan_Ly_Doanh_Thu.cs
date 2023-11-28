@@ -68,7 +68,7 @@ namespace TestProject4
             //WebDriverWait wait = new WebDriverWait(drive, TimeSpan.FromSeconds(1000));
             //drive.SwitchTo().Window(drive.WindowHandles.Last());
 
-
+            Thread.Sleep(500);
             drive.FindElementByAccessibilityId("1001").SendKeys("test");
             drive.FindElementByAccessibilityId("1").Click();
 
@@ -117,7 +117,6 @@ namespace TestProject4
 
             WindowsElement dateTimepick = drive.FindElementByAccessibilityId("date_From");
             actions.MoveToElement(dateTimepick).Click().Perform();
-            actions.KeyDown(Keys.Command);
             Thread.Sleep(1000);
             drive.FindElementByAccessibilityId("btn_fill").Click();
             //WebDriverWait wait = new WebDriverWait(drive, TimeSpan.FromSeconds(1000));

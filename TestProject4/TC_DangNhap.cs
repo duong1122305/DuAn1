@@ -21,7 +21,7 @@ namespace TestProject4
         public WindowsElement thongBao => drive.FindElementByAccessibilityId("2");
 
         public WindowsElement thoat => drive.FindElementByName("Close");
-        public static AppiumOptions options = new AppiumOptions();
+        public static AppiumOptions options;
         string actual;
         WindowsDriver<WindowsElement> drive;
 
@@ -29,7 +29,7 @@ namespace TestProject4
         public void Setup()
         {
             System.Diagnostics.Process.Start(@"C:\Program Files (x86)\Windows Application Driver\WinAppDriver.exe");//gọi winappdrive
-
+            options = new AppiumOptions();
             options.AddAdditionalCapability("app", @"C:\Users\ASUS\source\repos\DuAn1\bin\Debug\net6.0-windows\GUI.exe");//đường dẫn đến app cần test
 
             drive = new WindowsDriver<WindowsElement>(new Uri("http://127.0.0.1:4723"), options);
